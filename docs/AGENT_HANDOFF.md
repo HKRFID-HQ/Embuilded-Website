@@ -11,9 +11,10 @@ This file is the operational entry point for the project. Read it before changin
 - Delivery branch: `main`
 - Public production alias: `https://website-development-rust.vercel.app/`
 - Vercel project: `rfid4/website-development`, Root Directory `website`
-- Current implementation commit: `44cfe79` (`Add Open4S interoperability proposition`)
-- Current documentation commit: `fc78e14` (`Record Open4S release verification`)
-- Both commits passed GitHub Actions and reached Vercel production on 30 September 2026.
+- Current organization delivery commit: `ddfce52` ([organization commit](https://github.com/HKRFID-HQ/Embuilded-Website/commit/ddfce52c2c5e6fb04ecef59026c738ac6c0b3eb8))
+- Organization GitHub Actions run: [36675951116](https://github.com/HKRFID-HQ/Embuilded-Website/actions/runs/36675951116) passed lint, tests, build, typecheck, protected-source verification and production browser checks.
+- Local `origin` points to the organization repository; `legacy` points to the personal fallback. Gas-sensor brochure work is intentionally deferred and no HNAG1000 changes remain.
+- Vercel still uses the personal repository connection and the existing production alias; switch the Vercel Git repository separately when organization access is available.
 
 Never modify the protected requirements directory. Develop only in `website/` and supporting project documents or scripts outside that source snapshot.
 
@@ -216,7 +217,9 @@ The organization repository is now the approved delivery target. Keep the person
 
 ## Current release state
 
-The Open4S implementation is live. Implementation commit `44cfe79` passed GitHub Actions run `36663384266` and Vercel deployment `dpl_76DPmMxHUXVSCVRtioWp7vYdvoin`. Live checks returned HTTP 200 for both Open4S locales, both TRACI locales, Partners and the sitemap; both Open4S routes appear in the sitemap. Documentation commit `fc78e14` passed GitHub Actions run `36663777439` and Vercel deployment `dpl_Czhw1PYjH1z5n28YJYjrGxdiNdLP` reached Ready.
+The organization repository is the current delivery source as of 30 September 2026. Commit `ddfce52` is pushed to `main` and CI passed. The latest retained product work includes the Open4S proposition, bilingual routes, construction-led visual system and approved Embuilded/TRACI logo assets. Do not resume the deferred gas-sensor product addition unless the user explicitly requests it.
+
+The Open4S implementation remains live on the existing Vercel alias. Earlier production verification covered both Open4S locales, both TRACI locales, Partners and the sitemap. The organization push contains the complete current history and documentation.
 
 The full Git history was copied to `HKRFID-HQ/Embuilded-Website` on 30 September 2026. Local `origin` points to the organization repository and `legacy` points to the personal fallback. The protected requirements remained unchanged.
 
