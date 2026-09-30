@@ -15,7 +15,7 @@ const page = await context.newPage();
 const errors = [];
 const internalLinks = new Set();
 page.on("pageerror", error => errors.push(error.message));
-const paths = ["/", "/traci", "/open4s", "/solutions", "/devices", "/services", "/partners", "/industries", "/about", "/contact", "/solutions/gas-monitoring", "/solutions/hookcam", "/solutions/outrigger-monitoring", "/solutions/worker-tracking", "/solutions/site-vision", "/solutions/rfid-asset-tracking"];
+const paths = ["/", "/traci", "/open4s", "/solutions", "/devices", "/products", "/services", "/partners", "/industries", "/about", "/contact", "/solutions/gas-monitoring", "/solutions/hookcam", "/solutions/outrigger-monitoring", "/solutions/worker-tracking", "/solutions/site-vision", "/solutions/rfid-asset-tracking", "/products/multi-gas-detector"];
 const report = { baseURL, browser:await browser.version(), routes:[], layouts:[], checks:[], accessibility:[] };
 try {
   for (const route of paths) {
@@ -59,7 +59,7 @@ try {
   report.checks.push(`Verified ${internalLinks.size} unique internal destinations, including anchor targets.`);
   for (const width of [375,768,1280,1440]) {
     await page.setViewportSize({width,height:1000});
-    for (const route of ["/","/solutions","/contact","/services","/traci","/partners","/industries","/about","/devices","/solutions/gas-monitoring"]) {
+    for (const route of ["/","/solutions","/contact","/services","/traci","/partners","/industries","/about","/devices","/products","/products/multi-gas-detector","/solutions/gas-monitoring"]) {
       await page.goto(route,{waitUntil:"load"});
       await page.evaluate(() => document.fonts.ready);
       const size = await page.evaluate(() => ({scroll:document.documentElement.scrollWidth,viewport:innerWidth}));
