@@ -26,6 +26,7 @@ try {
     if (route !== "/") assert.equal(await page.locator("[data-page-hero]").count(), 1, `${route}: contextual page hero`);
     assert.ok((await page.title()).includes("Embuilded"),`${route}: title`);
     for (const image of await page.locator("img").all()) {
+      if (!(await image.isVisible())) continue;
       await image.scrollIntoViewIfNeeded();
       const source = await image.evaluate(img => img.currentSrc || img.src);
       const imageResponse = await context.request.get(source);

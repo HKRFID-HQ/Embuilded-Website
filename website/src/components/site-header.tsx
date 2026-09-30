@@ -8,11 +8,9 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight, List, X } from "@phosphor-icons/react";
 import Image from "next/image";
 import { navigation } from "@/content/site";
-export function Brand({ inverse = false }: {
-    inverse?: boolean;
-}) {
+export function Brand() {
  const t = useCopy();
-    return <Link href="/" className={`brand${inverse ? " brand-inverse" : ""}`} aria-label={t("Embuilded home")}><Image src={inverse ? "/brand/building-embuilded-horizontal-inverse.svg" : "/brand/building-embuilded-horizontal.svg"} alt="" width={1300} height={390} priority={!inverse}/></Link>;
+    return <Link href="/" className="brand" aria-label={t("Embuilded home")}><Image className="brand-light" src="/brand/building-embuilded-horizontal.svg" alt="" width={1245} height={320} priority/><Image className="brand-dark" src="/brand/building-embuilded-horizontal-inverse.svg" alt="" width={1245} height={320}/></Link>;
 }
 export function SiteHeader() {
  const t = useCopy();

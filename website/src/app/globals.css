@@ -66,6 +66,7 @@ svg { flex-shrink: 0; }
 .header-inner { max-width: 1432px; height: 100%; padding-inline: 56px; margin: auto; display: flex; gap: 32px; align-items: center; }
 .brand { display: inline-flex; align-items: center; flex-shrink: 0; }
 .brand img { display: block; width: 176px; height: auto; }
+.brand .brand-dark { display: none; }
 .desktop-nav { display: flex; gap: 22px; margin-left: auto; align-items: center; }
 .desktop-nav a { font-size: 13px; font-weight: 400; position: relative; padding-block: 10px; white-space: nowrap; }
 .desktop-nav a::after { position: absolute; content: ""; bottom: 1px; inset-inline: 0; height: 1px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .18s; }
@@ -487,6 +488,8 @@ input::placeholder, textarea::placeholder { color: var(--muted); }
 }
 @media (prefers-color-scheme: dark) {
   :root { color-scheme: dark; --paper: #191918; --white: #20201e; --ink: #f2f2ed; --muted: #b5b5ae; --line: #3a3a35; --line-strong: #77776d; --soft: #282825; --accent: #f5a071; --accent-hover: #ffc09c; --accent-soft: #382b24; --on-accent: #25180f; --danger: #ffb4ac; --danger-soft: #392526; }
+  .brand .brand-light { display: none; }
+  .brand .brand-dark { display: block; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

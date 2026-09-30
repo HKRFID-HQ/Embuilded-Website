@@ -56,7 +56,7 @@ export function Architecture({ compact = false }: {
 }) {
  const t = useCopy();
     return <div className={`architecture${compact ? " architecture-compact" : ""}`} aria-label={t("TRACI connects field devices to intelligence, evidence and your platform")}>
-    <div className="architecture-label"><span className="mono">{t("TRACI / SYSTEM OVERVIEW")}</span><Image className="architecture-wordmark" src="/brand/traci-digital-wordmark.svg" alt="TRACI" width={1065} height={220}/></div>
+    <div className="architecture-label"><span className="mono">{t("TRACI / SYSTEM OVERVIEW")}</span><Image className="architecture-wordmark" src="/brand/traci-digital-wordmark.svg" alt="TRACI" width={420} height={87}/></div>
     <div className="architecture-flow">
       <div className="architecture-node"><strong>{t("Devices")}</strong><span>{t("Cameras \u00B7 Sensors \u00B7 Gateways")}</span></div>
       <Connection />
@@ -82,5 +82,5 @@ export function ContactBand({ title = "Bring your next project into focus.", des
 }
 export function SiteFooter() {
  const t = useCopy();
-    return <footer className="site-footer"><div className="wrap"><div className="footer-top"><div className="footer-brand"><Brand inverse/><p>{t("Embedded intelligence")}<br />{t("for the built world.")}</p></div><div className="footer-nav"><h2>{t("Explore")}</h2>{navigation.slice(0, 4).map(item => <Link key={item.href} href={item.href}>{t(item.label)}</Link>)}</div><div className="footer-nav"><h2>{t("Connect")}</h2>{navigation.slice(4).map(item => <Link key={item.href} href={item.href}>{t(item.label)}</Link>)}<Link href="/contact">{t("Let\u2019s talk")}</Link></div><div className="footer-statement"><span className="mono">{t("FIELD TO PLATFORM")}</span><p>{t("Practical systems.")}<br />{t("Connected operations.")}</p></div></div><div className="footer-bottom"><span>© {new Date().getFullYear()}{t(" Embuilded Intelligence Limited")}</span><span>{t("Devices. Intelligence. Evidence.")}</span></div></div></footer>;
+    return <footer className="site-footer"><div className="wrap"><div className="footer-top"><div className="footer-brand"><Brand/><p>{t("Embedded intelligence")}<br />{t("for the built world.")}</p></div><div className="footer-nav"><h2>{t("Explore")}</h2>{navigation.slice(0, 4).map(item => <Link key={item.href} href={item.href}>{t(item.label)}</Link>)}</div><div className="footer-nav"><h2>{t("Connect")}</h2>{navigation.slice(4).map(item => <Link key={item.href} href={item.href}>{t(item.label)}</Link>)}<Link href="/contact">{t("Let\u2019s talk")}</Link></div><div className="footer-statement"><span className="mono">{t("FIELD TO PLATFORM")}</span><p>{t("Practical systems.")}<br />{t("Connected operations.")}</p></div></div><div className="footer-bottom"><span>© {new Date().getFullYear()}{t(" Embuilded Intelligence Limited")}</span><span>{t("Devices. Intelligence. Evidence.")}</span></div></div></footer>;
 }
