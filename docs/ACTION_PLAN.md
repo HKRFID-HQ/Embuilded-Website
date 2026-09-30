@@ -2,7 +2,7 @@
 
 ## Current iteration — Open4S interoperability proposition
 
-Open4S is implemented as a first-class bilingual proposition under the TRACI platform. The new `/open4s` and `/zh-HK/open4s` routes explain two-way integration, operational traceability and the commercial reasons for an open safety stack. Global navigation, the TRACI platform page and the Partners page provide deliberate entry points. The visual treatment extends the construction editorial system with interface-flow columns, a dark control layer and a restrained closing statement. Local production, bilingual, responsive and accessibility verification passes; release and production verification are the remaining delivery steps.
+Open4S is implemented, published and production-verified as a first-class bilingual proposition under the TRACI platform. The new `/open4s` and `/zh-HK/open4s` routes explain two-way integration, operational traceability and the commercial reasons for an open safety stack. Global navigation, the TRACI platform page and the Partners page provide deliberate entry points. The visual treatment extends the construction editorial system with interface-flow columns, a dark control layer and a restrained closing statement. Implementation commit `44cfe79` passed GitHub Actions and Vercel production verification.
 
 ## Previous iteration — contextual inner-page heroes and agent handoff
 
