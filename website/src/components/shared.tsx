@@ -71,7 +71,7 @@ export function ServiceList({ full = false }: {
     full?: boolean;
 }) {
  const t = useCopy();
-    return <div className="service-list">{services.map(service => <article id={service.id} key={service.id} className="service-row"><span className="service-number mono">{service.number}</span><div><h3>{t(service.title)}</h3><p>{t(service.description)}</p>{full && <ul className="check-list">{service.items.map(item => <li key={item}><Check size={17} aria-hidden="true"/>{t(item)}</li>)}</ul>}</div><Link href={full ? `/contact?service=${encodeURIComponent(service.title)}` : `/services#${service.id}`} className="circle-link" aria-label={`${t(full ? "Discuss" : "Explore")} ${t(service.title)}`}><ArrowUpRight size={24} aria-hidden="true"/></Link></article>)}</div>;
+    return <div className="service-list">{services.map(service => <article id={service.id} key={service.id} className="service-row"><span className="service-number mono">{service.number}</span><div><h3>{t(service.title)}</h3><p>{t(service.description)}</p>{full && <ul className="check-list">{service.items.map(item => <li key={item}><Check size={17} aria-hidden="true"/>{t(item)}</li>)}</ul>}</div><Link href={full ? `/contact?service=${encodeURIComponent(service.title)}` : `/about#${service.id}`} className="circle-link" aria-label={`${t(full ? "Discuss" : "Explore")} ${t(service.title)}`}><ArrowUpRight size={24} aria-hidden="true"/></Link></article>)}</div>;
 }
 export function ContactBand({ title = "Bring your next project into focus.", description = "Tell us what is happening on your site. We’ll help connect the pieces." }: {
     title?: string;

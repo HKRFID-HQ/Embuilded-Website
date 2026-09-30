@@ -36,7 +36,7 @@ try {
   page.on("pageerror", error => report.errors.push(error.message));
   for (const width of [375, 768, 960, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
-    for (const route of ["/", "/industries"]) {
+    for (const route of ["/", "/solutions"]) {
       await page.goto(base + route, { waitUntil: "load" });
       assert.equal(await page.locator(".industry-photo-frame").count(), 4);
       for (const img of await page.locator(".industry-photo-frame img").all()) {
@@ -48,7 +48,7 @@ try {
         assert(response.ok(), `Image delivery failed: ${currentSrc}`);
         assert.match(response.headers()["content-type"] ?? "", /^image\//);
       }
-      if (route === "/industries") {
+      if (route === "/solutions") {
         for (const [key, photo] of Object.entries(photography)) {
           const figure = page.locator(`figure[data-industry-photo="${key}"]`);
           assert.equal(await figure.locator("img").getAttribute("alt"), photo.alt);
@@ -69,7 +69,7 @@ try {
   }
   for (const colorScheme of ["light", "dark"]) {
     await page.emulateMedia({ colorScheme });
-    for (const route of ["/", "/industries"]) {
+    for (const route of ["/", "/solutions"]) {
       await page.goto(base + route);
       const audit = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze();
       assert.deepEqual(audit.violations.map(v => ({ id: v.id, nodes: v.nodes.map(n => n.target) })), [], `${route} ${colorScheme}`);
@@ -94,9 +94,9 @@ try {
   report.motion.push("Photo entrances play once; integrated service photography retains restrained ambient movement");
 
   // Exercise client-side navigation as well as direct page loads.
-  await moving.locator('.industry-links a[href="/industries#construction"]').click();
-  await moving.waitForURL("**/industries#construction");
-  await moving.waitForFunction(() => window.__motion.some(item => item.photo && item.route === "/industries"));
+  await moving.locator('.industry-links a[href="/solutions#construction"]').click();
+  await moving.waitForURL("**/solutions#construction");
+  await moving.waitForFunction(() => window.__motion.some(item => item.photo && item.route === "/solutions"));
   await moving.goto(base + "/traci");
   await moving.locator(".architecture").scrollIntoViewIfNeeded();
   await moving.waitForFunction(() => window.__motion.filter(item => item.connector).length === 2);
@@ -110,7 +110,7 @@ try {
 
   const staticContext = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 375, height: 800 } });
   const staticPage = await staticContext.newPage();
-  await staticPage.goto(base + "/industries");
+  await staticPage.goto(base + "/solutions");
   for (const figure of await staticPage.locator("figure[data-industry-photo]").all()) {
     await figure.scrollIntoViewIfNeeded();
     assert(await figure.isVisible());

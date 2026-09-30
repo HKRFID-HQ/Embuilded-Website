@@ -2,8 +2,6 @@ export const navigation = [
   { label: "TRACI", href: "/traci" }, { label: "Open4S", href: "/open4s" },
   { label: "Solutions", href: "/solutions" },
   { label: "Devices", href: "/devices" }, { label: "Products", href: "/products" },
-  { label: "Services", href: "/services" },
-  { label: "Partners", href: "/partners" }, { label: "Industries", href: "/industries" },
   { label: "About", href: "/about" }
 ];
 
