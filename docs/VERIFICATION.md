@@ -1,10 +1,16 @@
 # Verification Record
 
+## Approved brand asset integration — 30 September 2026
+
+The supplied Embuilded horizontal lockup, Embuilded application icon and TRACI digital wordmark were copied into the self-hosted website assets. The header and footer now use the approved Embuilded mark; the footer uses a documented inverse accessibility variant. The TRACI platform diagram uses the supplied vector wordmark, and the Next.js application icon uses the supplied app-icon SVG. Source filenames and SHA-256 hashes are recorded in [`BRAND_ASSETS.md`](BRAND_ASSETS.md).
+
+Validation passed: protected-source verification, ESLint, TypeScript, the Next.js production build, all 16 English content snapshots, 16 English browser routes, 40 responsive browser layouts, 57 internal destinations, 16 Traditional Chinese routes, 24 Chinese responsive layouts, 8 Chinese accessibility audits and 44 responsive visual layouts. Desktop and mobile captures were inspected for header, footer and TRACI wordmark proportions. No horizontal overflow or automated WCAG A/AA violations were found.
+
 ## Organization repository migration — 30 September 2026
 
 The initially empty private repository `HKRFID-HQ/Embuilded-Website` was inspected before migration; the authenticated account had `ADMIN` permission. The complete local `main` history was pushed without force, and the remote branch SHA `00097eb7d378cc84ee512a0070bd7cc3f9f6978e` matched the local branch. The new repository has `main` as its default branch and triggered its own Website checks workflow. Local `origin` now targets the organization repository; the former delivery repository is retained as `legacy`. Publishing guards and active delivery documentation were updated to prevent accidental routine pushes to the former repository. All four protected source files still match their recorded checksums.
 
-Vercel remains connected to the former GitHub repository at the time of migration. The live production deployment is unaffected. Reconnect or re-import the project from `HKRFID-HQ/Embuilded-Website` after confirming that the Vercel GitHub app has access to the HKRFID-HQ organization; retain Root Directory `website`, the existing environment variables and the current production aliases.
+The user subsequently requested that routine publishing continue through `Johnson-HK-RFID/website-development` because organization access is not ready. Vercel and the production alias remain connected to that repository. The organization copy is retained for a later controlled cutover; retain Root Directory `website`, the existing environment variables and the current production aliases when that occurs.
 
 ## Open4S interoperability proposition — 30 September 2026
 

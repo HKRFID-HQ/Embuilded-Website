@@ -51,7 +51,7 @@ Implementation lives in `website/src/app/`, with reusable content in `website/sr
 | USER-002 | Preserve original source files. | Original ZIP retained locally; all four extracted source files match their recorded SHA-256 checksums. The source repository has not been modified. |
 | USER-004 | Prefer Next.js. | Also recommended in Tasks / Phase 3. |
 | USER-005 | Adapt taste-skill to the project. | Original snapshot retained; source-specific workflow and the implemented visual decisions are documented. Final brand approval remains open. |
-| USER-006 | New deliverables may be pushed to the repository. | Complete history migrated to the authorized `main` branch in `HKRFID-HQ/Embuilded-Website`; the organization repository is the current delivery origin. |
+| USER-006 | New deliverables may be pushed to the repository. | Complete history exists in both repositories; routine publishing currently uses `Johnson-HK-RFID/website-development` until organization access and Vercel cutover are ready. |
 
 ## Open decisions
 

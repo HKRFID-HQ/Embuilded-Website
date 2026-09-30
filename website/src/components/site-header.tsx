@@ -6,12 +6,13 @@ import { usePathname } from "@/i18n/navigation";
 import { LanguageSwitcher } from "./language-switcher";
 import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight, List, X } from "@phosphor-icons/react";
+import Image from "next/image";
 import { navigation } from "@/content/site";
 export function Brand({ inverse = false }: {
     inverse?: boolean;
 }) {
  const t = useCopy();
-    return <Link href="/" className={`brand${inverse ? " brand-inverse" : ""}`} aria-label={t("Embuilded home")}><svg className="brand-mark" viewBox="0 0 23 23" fill="currentColor" aria-hidden="true"><rect width="23" height="5"/><rect y="9" width="16.56" height="5"/><rect y="18" width="23" height="5"/></svg><span>embuilded<span className="brand-period">.</span></span></Link>;
+    return <Link href="/" className={`brand${inverse ? " brand-inverse" : ""}`} aria-label={t("Embuilded home")}><Image src={inverse ? "/brand/building-embuilded-horizontal-inverse.svg" : "/brand/building-embuilded-horizontal.svg"} alt="" width={1300} height={390} priority={!inverse}/></Link>;
 }
 export function SiteHeader() {
  const t = useCopy();

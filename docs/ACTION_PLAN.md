@@ -1,8 +1,12 @@
 # Embuilded Website Delivery Plan
 
-## Repository migration — 30 September 2026
+## Approved logo integration — 30 September 2026
 
-The complete Git history was pushed to the private organization repository `HKRFID-HQ/Embuilded-Website`, with `main` retaining commit `00097eb` and all earlier history. Local `origin`, the protected publishing script, deployment documentation and agent instructions now target the organization repository. The former `Johnson-HK-RFID/website-development` remote is retained as `legacy` while Vercel's Git integration is moved; it is no longer the routine delivery target.
+Replace the temporary typed Embuilded and TRACI marks with the supplied company SVG assets. Use the complete Embuilded horizontal lockup in the header and footer, the supplied Embuilded app icon for browser/application metadata, and the TRACI digital wordmark in the platform architecture. Preserve source hashes and an accessible inverse footer variant in the internal brand record. Publish this iteration to the personal repository while organization access remains pending.
+
+## Repository migration preparation — 30 September 2026
+
+The complete Git history was pushed to the private organization repository `HKRFID-HQ/Embuilded-Website`, with `main` retaining commit `00097eb` and all earlier history. The user subsequently confirmed that organization access is not ready. Local `origin`, the protected publishing script and Vercel therefore continue to use `Johnson-HK-RFID/website-development`; the organization copy is retained as the `organization` remote for a later controlled cutover.
 
 ## Current iteration — Open4S interoperability proposition
 

@@ -4,7 +4,7 @@ $taskRoot = Split-Path -Parent $PSScriptRoot
 Push-Location $taskRoot
 try {
     $taskRemote = git remote get-url origin
-    if ($LASTEXITCODE -ne 0 -or $taskRemote -ne 'https://github.com/HKRFID-HQ/Embuilded-Website.git') { throw 'Unexpected delivery remote. Inspect before publishing.' }
+    if ($LASTEXITCODE -ne 0 -or $taskRemote -ne 'https://github.com/Johnson-HK-RFID/website-development.git') { throw 'Unexpected delivery remote. Inspect before publishing.' }
     $taskBranch = git branch --show-current
     if ($taskBranch -ne 'main') { throw 'The delivery branch must be main.' }
     $taskChanges = git status --porcelain
@@ -22,5 +22,5 @@ try {
     $taskLocal = git rev-parse HEAD
     $taskRemoteHead = git ls-remote origin refs/heads/main
     if ($LASTEXITCODE -ne 0 -or -not $taskRemoteHead.StartsWith($taskLocal)) { throw 'Remote verification failed.' }
-    Write-Output "Verified: https://github.com/HKRFID-HQ/Embuilded-Website/commit/$taskLocal"
+    Write-Output "Verified: https://github.com/Johnson-HK-RFID/website-development/commit/$taskLocal"
 } finally { Pop-Location }
