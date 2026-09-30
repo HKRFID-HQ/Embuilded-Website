@@ -1,5 +1,9 @@
 # Embuilded Website Delivery Plan
 
+## Repository migration — 30 September 2026
+
+The complete Git history was pushed to the private organization repository `HKRFID-HQ/Embuilded-Website`, with `main` retaining commit `00097eb` and all earlier history. Local `origin`, the protected publishing script, deployment documentation and agent instructions now target the organization repository. The former `Johnson-HK-RFID/website-development` remote is retained as `legacy` while Vercel's Git integration is moved; it is no longer the routine delivery target.
+
 ## Current iteration — Open4S interoperability proposition
 
 Open4S is implemented, published and production-verified as a first-class bilingual proposition under the TRACI platform. The new `/open4s` and `/zh-HK/open4s` routes explain two-way integration, operational traceability and the commercial reasons for an open safety stack. Global navigation, the TRACI platform page and the Partners page provide deliberate entry points. The visual treatment extends the construction editorial system with interface-flow columns, a dark control layer and a restrained closing statement. Implementation commit `44cfe79` passed GitHub Actions and Vercel production verification.
@@ -12,7 +16,7 @@ Implemented, published and production-verified: every primary inner page and sol
 
 Build the corporate website from the preserved strategy, content architecture and build plan. The complete directory `references/website-requirements/aa55356c7615/source/Embuilded-website--main` is read-only for this project. Track progress here and in supplemental documents.
 
-Delivery repository: `https://github.com/Johnson-HK-RFID/website-development.git`. The user's latest instruction authorizes delivery to `main`, subject to preserving any existing remote history and files.
+Delivery repository: `https://github.com/HKRFID-HQ/Embuilded-Website.git`. The complete history was migrated from the former Johnson-HK-RFID repository on 30 September 2026. The organization repository is now `origin`; the former repository remains available locally as the `legacy` remote during migration verification.
 
 ## Milestones
 

@@ -104,7 +104,7 @@ Do not invent evidence, performance claims, customers, certifications, contact d
 
 Use the [traceability register](requirements-traceability.md) to connect implementation decisions to the source drafts. Use the [project frontend skill](frontend/skills/hkrfid-website-frontend/SKILL.md) for project constraints during later design and implementation.
 
-Keep original source files unchanged. The application occupies the new `website/` directory. Before a push, inspect the actual target history and preserve existing paths and file objects. The user explicitly authorized `main` in the new `Johnson-HK-RFID/website-development` repository. Do not overwrite originals or force-push.
+Keep original source files unchanged. The application occupies the `website/` directory. Before a push, inspect the actual target history and preserve existing paths and file objects. The user explicitly authorized `main` in `HKRFID-HQ/Embuilded-Website` after the complete history was migrated from the former delivery repository. Do not overwrite originals or force-push.
 
 ## 8. Current status
 
@@ -114,4 +114,4 @@ The application in `website/` implements the nine main pages, six solution detai
 
 The production build, seven inquiry tests, linting, 15-route browser checks, 40 responsive layout checks and automated accessibility checks passed. Corrected findings include color contrast and native image libraries missing from the standalone build. See [VERIFICATION.md](VERIFICATION.md) for evidence and limits, and [ACTION_PLAN.md](ACTION_PLAN.md) for delivery status.
 
-The user's delivery target is `Johnson-HK-RFID/website-development`, with `main` explicitly authorized. The implementation was pushed to that initially empty repository, its remote commit verified, and its GitHub Actions checks passed. The original source repository remains the requirements baseline. No live hosting deployment has been performed.
+The user's delivery target is `HKRFID-HQ/Embuilded-Website`, with `main` explicitly authorized. The complete implementation history was pushed to that initially empty organization repository and its remote commit verified. The former `Johnson-HK-RFID/website-development` repository remains a migration fallback. The protected local source snapshot remains the requirements baseline.

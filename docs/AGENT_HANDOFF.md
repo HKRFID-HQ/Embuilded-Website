@@ -6,7 +6,8 @@ This file is the operational entry point for the project. Read it before changin
 
 - Working application: `website/`
 - Protected requirements: `references/website-requirements/aa55356c7615/source/Embuilded-website--main`
-- Delivery repository: `https://github.com/Johnson-HK-RFID/website-development.git`
+- Delivery repository: `https://github.com/HKRFID-HQ/Embuilded-Website.git`
+- Legacy migration fallback: `https://github.com/Johnson-HK-RFID/website-development.git` (remote name `legacy`; do not publish routine changes here)
 - Delivery branch: `main`
 - Public production alias: `https://website-development-rust.vercel.app/`
 - Vercel project: `rfid4/website-development`, Root Directory `website`
@@ -198,7 +199,7 @@ Current expected coverage after Open4S:
 
 ## Delivery procedure
 
-Only publish to `https://github.com/Johnson-HK-RFID/website-development.git` on `main` through `scripts/publish.ps1`.
+Only publish to `https://github.com/HKRFID-HQ/Embuilded-Website.git` on `main` through `scripts/publish.ps1`.
 
 1. Confirm `git diff --check` and a clean, reviewed change set.
 2. Run source verification and relevant website checks.
@@ -209,13 +210,13 @@ Only publish to `https://github.com/Johnson-HK-RFID/website-development.git` on 
 7. Verify the public alias, both locales, canonical host, new links and sitemap entries.
 8. Record the commit, CI run, deployment and live checks in `VERIFICATION.md`.
 
-Do not publish to the original HKRFID requirements repository.
+The current organization repository is the approved website delivery target. Do not publish website code into the protected requirements snapshot or its former source repository.
 
 ## Current release state
 
 The Open4S implementation is live. Implementation commit `44cfe79` passed GitHub Actions run `36663384266` and Vercel deployment `dpl_76DPmMxHUXVSCVRtioWp7vYdvoin`. Live checks returned HTTP 200 for both Open4S locales, both TRACI locales, Partners and the sitemap; both Open4S routes appear in the sitemap. Documentation commit `fc78e14` passed GitHub Actions run `36663777439` and Vercel deployment `dpl_Czhw1PYjH1z5n28YJYjrGxdiNdLP` reached Ready.
 
-The working tree was clean after publication. The protected requirements remained unchanged.
+The full Git history was migrated to `HKRFID-HQ/Embuilded-Website` on 30 September 2026. Local `origin` points to the organization repository and `legacy` points to the former delivery repository. The protected requirements remained unchanged.
 
 ## Known open dependencies
 

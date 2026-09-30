@@ -1,5 +1,11 @@
 # Verification Record
 
+## Organization repository migration — 30 September 2026
+
+The initially empty private repository `HKRFID-HQ/Embuilded-Website` was inspected before migration; the authenticated account had `ADMIN` permission. The complete local `main` history was pushed without force, and the remote branch SHA `00097eb7d378cc84ee512a0070bd7cc3f9f6978e` matched the local branch. The new repository has `main` as its default branch and triggered its own Website checks workflow. Local `origin` now targets the organization repository; the former delivery repository is retained as `legacy`. Publishing guards and active delivery documentation were updated to prevent accidental routine pushes to the former repository. All four protected source files still match their recorded checksums.
+
+Vercel remains connected to the former GitHub repository at the time of migration. The live production deployment is unaffected. Reconnect or re-import the project from `HKRFID-HQ/Embuilded-Website` after confirming that the Vercel GitHub app has access to the HKRFID-HQ organization; retain Root Directory `website`, the existing environment variables and the current production aliases.
+
 ## Open4S interoperability proposition — 30 September 2026
 
 Open4S is implemented as a dedicated English and Traditional Chinese platform proposition at `/open4s` and `/zh-HK/open4s`. It covers the three integration directions, operational traceability, vendor independence and data control supplied in the approved business content. The global navigation, TRACI and Partners pages link to it. The page reuses the contextual Hong Kong construction hero and extends the warm-neutral editorial system with structured integration flows and restrained scroll reveals.
