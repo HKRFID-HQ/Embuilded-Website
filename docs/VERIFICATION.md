@@ -8,9 +8,9 @@ Validation passed: protected-source verification, ESLint, TypeScript, the Next.j
 
 ## Organization repository migration — 30 September 2026
 
-The initially empty private repository `HKRFID-HQ/Embuilded-Website` was inspected before migration; the authenticated account had `ADMIN` permission. The complete local `main` history was pushed without force, and the remote branch SHA `00097eb7d378cc84ee512a0070bd7cc3f9f6978e` matched the local branch. The new repository has `main` as its default branch and triggered its own Website checks workflow. Local `origin` now targets the organization repository; the former delivery repository is retained as `legacy`. Publishing guards and active delivery documentation were updated to prevent accidental routine pushes to the former repository. All four protected source files still match their recorded checksums.
+The initially empty private repository `HKRFID-HQ/Embuilded-Website` was inspected before migration; the authenticated account had `ADMIN` permission. The complete local `main` history was pushed without force, and the remote branch SHA `00097eb7d378cc84ee512a0070bd7cc3f9f6978e` matched the local branch. The new repository has `main` as its default branch and triggered its own Website checks workflow. The organization copy is retained as a future migration target while the personal repository remains connected to Vercel. All four protected source files still match their recorded checksums.
 
-The user subsequently requested that routine publishing continue through `Johnson-HK-RFID/website-development` because organization access is not ready. Vercel and the production alias remain connected to that repository. The organization copy is retained for a later controlled cutover; retain Root Directory `website`, the existing environment variables and the current production aliases when that occurs.
+The user subsequently authorized the organization repository as the routine website delivery target. Local `origin` now points to `HKRFID-HQ/Embuilded-Website`, while the personal repository is retained as `legacy`. Vercel remains live; its Git connection should be switched to the organization repository with Root Directory `website` when the Vercel organization permission is available.
 
 ## Open4S interoperability proposition — 30 September 2026
 

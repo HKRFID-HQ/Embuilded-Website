@@ -10,5 +10,5 @@ Non-negotiable rules:
 - Keep photography sources and licences in the internal manifests; do not show stock-library attribution captions in the public interface.
 - Use the established warm neutral, charcoal and construction-orange visual system. Avoid emoji, blue-purple AI gradients, fabricated dashboards and generic AI imagery.
 - Run `scripts/verify-sources.ps1` and the relevant website checks before committing.
-- Publish only to `https://github.com/Johnson-HK-RFID/website-development.git` on `main` through `scripts/publish.ps1` until the user confirms organization access and the Vercel Git connection has moved. Keep `HKRFID-HQ/Embuilded-Website` as the `organization` remote.
+- Publish only to `https://github.com/HKRFID-HQ/Embuilded-Website.git` on `main` through `scripts/publish.ps1`. Keep the personal repository as the `legacy` remote.
 

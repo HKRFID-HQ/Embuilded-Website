@@ -114,4 +114,4 @@ The application in `website/` implements the nine main pages, six solution detai
 
 The production build, seven inquiry tests, linting, 15-route browser checks, 40 responsive layout checks and automated accessibility checks passed. Corrected findings include color contrast and native image libraries missing from the standalone build. See [VERIFICATION.md](VERIFICATION.md) for evidence and limits, and [ACTION_PLAN.md](ACTION_PLAN.md) for delivery status.
 
-The complete implementation history was copied to `HKRFID-HQ/Embuilded-Website`, but organization access is not yet ready. Routine publishing therefore continues through the authorized `main` branch in `Johnson-HK-RFID/website-development`, which remains connected to Vercel. The protected local source snapshot remains the requirements baseline.
+The complete implementation history was copied to `HKRFID-HQ/Embuilded-Website`, which is now the authorized routine delivery target. The personal repository remains a fallback. The protected local source snapshot remains the requirements baseline.

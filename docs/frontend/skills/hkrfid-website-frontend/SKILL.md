@@ -31,7 +31,7 @@ Read the [requirements supplement](../../../requirements-draft.md) and [traceabi
 - Preserve all original remote paths, file contents and modes. Add supplemental documents and application files at unused paths; do not translate, rename or edit original files in place.
 - The assistant-authored local planning draft may be updated as requested. It is not an original remote source document.
 - The user has authorized pushing new deliverables. Use the preservation checks below without asking for the same authorization again. Authentication and actual repository permissions still have to work.
-- The current delivery target is `Johnson-HK-RFID/website-development`. A complete history also exists in `HKRFID-HQ/Embuilded-Website`, but routine publishing remains on the personal repository until organization access and Vercel integration are ready. The protected local requirements snapshot remains read-only.
+- The current delivery target is `HKRFID-HQ/Embuilded-Website`. The complete history was migrated from the personal repository; routine publishing now uses the organization repository. The protected local requirements snapshot remains read-only.
 
 ## Source-first workflow
 
