@@ -8,6 +8,10 @@ Status: implementation and visual redesign verified and delivered to GitHub main
 
 Add English and Traditional Chinese; preserve existing English business copy and routes. Reference the five supplied construction websites for visual hierarchy, use building-construction imagery rather than bridges or roads, and replace blue/purple accents with neutral surfaces and restrained construction orange. These explicit additions supersede earlier presentation assumptions without modifying the source drafts. See [BUILDING_DESIGN.md](BUILDING_DESIGN.md).
 
+### Open4S addition, 30 September 2026
+
+Add Open4S as the interoperability approach behind TRACI 4S. Explain that TRACI devices can connect to an existing CMP, SSSS platform, BMS, dashboard or enterprise system; compatible third-party devices can connect into TRACI; and TRACI can pass safety events and operational data into a wider digital environment through APIs, webhooks and standard integration methods. Present openness together with traceable device identity, permissions, event history, evidence, system health and integration status. Cover vendor independence, protection of existing hardware, incremental expansion, multi-vendor consolidation, integrator flexibility and customer control of data. Provide the complete experience in English and Traditional Chinese without modifying the protected source drafts.
+
 This supplement records the requirements in the user-provided `Embuilded-website--main.zip`. The original documents are preserved in the [source reference directory](../references/README.md).
 
 | Source | Coverage |
@@ -42,12 +46,13 @@ The three commercial layers are Field Engineering Services, Connected Hardware +
 
 ## 4. Information architecture
 
-The build plan specifies nine initial routes:
+The source build plan specifies nine initial routes. The later Open4S requirement adds a tenth primary route:
 
 | Navigation | Route |
 | --- | --- |
 | Home | `/` |
 | TRACI | `/traci` |
+| Open4S | `/open4s` |
 | Solutions | `/solutions` |
 | Devices | `/devices` |
 | Services | `/services` |

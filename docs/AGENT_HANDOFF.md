@@ -6,6 +6,8 @@ This repository contains a bilingual corporate website for Embuilded Intelligenc
 
 The current product concept is **embedded intelligence for the built world**: connect field devices, engineering, operational data and evidence into practical systems for building construction and related operations. TRACI is the platform layer connecting devices, intelligence, workflows and evidence. The target audience includes contractors, construction operators, engineering buyers, system integrators and technology partners in Hong Kong and international markets.
 
+**Open4S** is the interoperability approach behind TRACI 4S. Treat it as a platform proposition rather than a device or generic service: TRACI devices can feed an existing customer platform, compatible third-party devices can feed TRACI, and TRACI can pass events into the wider digital environment. Its product promise is open integration with traceable operational control.
+
 ## Basis for development
 
 Work is based on:
@@ -88,5 +90,5 @@ After a clean commit, run `scripts/publish.ps1`. Then wait for GitHub Actions an
 
 ## Current state and next work
 
-The core bilingual site, navigation, solution/device filtering, inquiry brief, SEO routes, responsive layouts, homepage film, integrated construction photography, inner-page hero media and motion system are implemented. Before new work, read the newest entries at the top of `ACTION_PLAN.md` and `VERIFICATION.md`. Record each material iteration there with what changed, why, validation results, commit, CI run and deployment.
+The core bilingual site, Open4S proposition, navigation, solution/device filtering, inquiry brief, SEO routes, responsive layouts, homepage film, integrated construction photography, inner-page hero media and motion system are implemented. Open4S lives at `/open4s` and `/zh-HK/open4s`, with entry points in the global navigation, TRACI and Partners. Before new work, read the newest entries at the top of `ACTION_PLAN.md` and `VERIFICATION.md`. Record each material iteration there with what changed, why, validation results, commit, CI run and deployment.
 

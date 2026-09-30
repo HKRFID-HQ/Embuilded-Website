@@ -1,6 +1,10 @@
 # Embuilded Website Delivery Plan
 
-## Current iteration — contextual inner-page heroes and agent handoff
+## Current iteration — Open4S interoperability proposition
+
+Open4S is implemented as a first-class bilingual proposition under the TRACI platform. The new `/open4s` and `/zh-HK/open4s` routes explain two-way integration, operational traceability and the commercial reasons for an open safety stack. Global navigation, the TRACI platform page and the Partners page provide deliberate entry points. The visual treatment extends the construction editorial system with interface-flow columns, a dark control layer and a restrained closing statement. Local production, bilingual, responsive and accessibility verification passes; release and production verification are the remaining delivery steps.
+
+## Previous iteration — contextual inner-page heroes and agent handoff
 
 Implemented, published and production-verified: every primary inner page and solution-detail route receives contextual construction photography in its top introduction. Route changes trigger a short staggered rise/fade, while hero images carry restrained slow drift; reduced-motion mode suppresses both. `AGENTS.md` and `docs/AGENT_HANDOFF.md` now provide an immediate entry point covering the product concept, development basis, protected files, architecture, commands, design rules, delivery and current state. GitHub Actions and the public Vercel deployment pass.
 

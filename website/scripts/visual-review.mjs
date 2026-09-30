@@ -16,7 +16,7 @@ const results = [];
 try {
   for (const width of [375, 768, 960, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
-    for (const route of ["/", "/traci", "/solutions", "/devices", "/contact", "/services", "/partners", "/about", "/industries", "/solutions/gas-monitoring"]) {
+    for (const route of ["/", "/traci", "/open4s", "/solutions", "/devices", "/contact", "/services", "/partners", "/about", "/industries", "/solutions/gas-monitoring"]) {
       const response = await page.goto(`${process.env.TEST_BASE_URL ?? "http://127.0.0.1:3000"}${route}`, { waitUntil: "load" });
       assert.equal(response.status(), 200, route);
       await page.evaluate(() => document.fonts.ready);
@@ -30,7 +30,7 @@ try {
   for (const colorScheme of ["light", "dark"]) {
     await page.emulateMedia({ colorScheme });
     await page.setViewportSize({ width: 960, height: 1000 });
-    for (const route of ["/", "/traci", "/solutions", "/devices", "/contact", "/services", "/partners", "/about", "/industries", "/solutions/gas-monitoring"]) {
+    for (const route of ["/", "/traci", "/open4s", "/solutions", "/devices", "/contact", "/services", "/partners", "/about", "/industries", "/solutions/gas-monitoring"]) {
       await page.goto(`${process.env.TEST_BASE_URL ?? "http://127.0.0.1:3000"}${route}`, { waitUntil: "load" });
       const audit = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze();
       contrast.push({ route, colorScheme, violations: audit.violations.map(v => ({ id: v.id, targets: v.nodes.map(n => n.target) })) });

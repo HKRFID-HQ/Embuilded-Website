@@ -15,7 +15,7 @@ const page = await context.newPage();
 const errors = [];
 const internalLinks = new Set();
 page.on("pageerror", error => errors.push(error.message));
-const paths = ["/", "/traci", "/solutions", "/devices", "/services", "/partners", "/industries", "/about", "/contact", "/solutions/gas-monitoring", "/solutions/hookcam", "/solutions/outrigger-monitoring", "/solutions/worker-tracking", "/solutions/site-vision", "/solutions/rfid-asset-tracking"];
+const paths = ["/", "/traci", "/open4s", "/solutions", "/devices", "/services", "/partners", "/industries", "/about", "/contact", "/solutions/gas-monitoring", "/solutions/hookcam", "/solutions/outrigger-monitoring", "/solutions/worker-tracking", "/solutions/site-vision", "/solutions/rfid-asset-tracking"];
 const report = { baseURL, browser:await browser.version(), routes:[], layouts:[], checks:[], accessibility:[] };
 try {
   for (const route of paths) {

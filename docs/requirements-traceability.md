@@ -11,6 +11,7 @@ Status: implementation and visual redesign verified and delivered to GitHub main
 | USER-018 | Building construction imagery; no blue/purple visual identity; reference five construction websites | [Building design record](BUILDING_DESIGN.md), local CC0 building photographs, neutral/orange tokens, rendered responsive review |
 | USER-019 | English and Chinese website | Fifteen English routes and fifteen Traditional Chinese equivalents; language control, localized metadata, search, validation and brief downloads; `test:i18n` |
 | USER-020 | Preserve existing content and protected originals | Original English content fixture retained with explicit photo/language-control allowances; source checksum verification |
+| USER-021 | Add Open4S as the interoperability approach behind TRACI 4S, including open APIs, third-party device support, two-way integration, operational traceability and the reasons to avoid vendor lock-in | Dedicated bilingual `/open4s` route; global, TRACI and Partners entry points; sixteen-route content, browser and bilingual verification |
 
 Source: user-provided `Embuilded-website--main.zip`, extracted into snapshot `aa55356c7615`. The archive label is `main`; its remote commit is unknown. Use the [source manifest](../references/website-requirements/aa55356c7615/source-manifest.json) to identify the reviewed artifact.
 

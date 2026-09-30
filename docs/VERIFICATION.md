@@ -1,5 +1,11 @@
 # Verification Record
 
+## Open4S interoperability proposition — 30 September 2026
+
+Open4S is implemented as a dedicated English and Traditional Chinese platform proposition at `/open4s` and `/zh-HK/open4s`. It covers the three integration directions, operational traceability, vendor independence and data control supplied in the approved business content. The global navigation, TRACI and Partners pages link to it. The page reuses the contextual Hong Kong construction hero and extends the warm-neutral editorial system with structured integration flows and restrained scroll reveals.
+
+Local validation passed: protected-source verification, ESLint, TypeScript, seven inquiry tests, the Next.js production build, all 16 English content snapshots, 16 English routes, 40 responsive browser layouts, 57 internal destinations, 16 Chinese routes, 24 Chinese responsive layouts, 8 Chinese accessibility audits, 44 responsive visual layouts, media verification and homepage-film behavior. The light/dark visual suite found no horizontal overflow or automated WCAG A/AA violations. Desktop and mobile full-page captures were manually inspected. The production server was restarted before the successful media run after its image optimizer timed out following the larger browser suites, as documented in the project handoff. GitHub Actions and production deployment will be recorded before release is marked complete.
+
 ## Inner-page hero and project handoff refinement — 24 September 2026
 
 About, Devices, Services, Solutions, Industries, TRACI, Partners and Contact now open with contextual construction photography. All six solution-detail routes use route-specific top images while retaining their existing operational focus content. Page entry applies a staggered rise/fade and image reveal, followed by restrained image drift; reduced-motion mode remains static. `AGENTS.md` and `docs/AGENT_HANDOFF.md` provide a durable starting point for subsequent agents.
