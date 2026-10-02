@@ -61,7 +61,10 @@ try {
   for (const width of [375,768,1280,1440]) {
     await page.setViewportSize({width,height:1000});
     for (const route of ["/","/solutions","/contact","/traci","/about","/devices","/products","/products/multi-gas-detector","/solutions/gas-monitoring"]) {
-      await page.goto(route,{waitUntil:"load"});
+      // Layout overflow only depends on DOM and CSS; images reserve fixed dimensions,
+      // so waiting for the full "load" event only makes this loop hostage to
+      // on-demand image optimization for new viewport sizes. DOMContentLoaded is enough.
+      await page.goto(route,{waitUntil:"domcontentloaded"});
       await page.evaluate(() => document.fonts.ready);
       const size = await page.evaluate(() => ({scroll:document.documentElement.scrollWidth,viewport:innerWidth}));
       assert.ok(size.scroll<=size.viewport+1,`${route} overflows at ${width}: ${size.scroll}`);
