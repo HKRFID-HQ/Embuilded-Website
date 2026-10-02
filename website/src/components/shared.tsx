@@ -56,7 +56,7 @@ export function Architecture({ compact = false }: {
 }) {
  const t = useCopy();
     return <div className={`architecture${compact ? " architecture-compact" : ""}`} aria-label={t("TRACI connects field devices to intelligence, evidence and your platform")}>
-    <div className="architecture-label"><span className="mono">{t("TRACI / SYSTEM OVERVIEW")}</span><Image className="architecture-wordmark" src="/brand/traci-digital-wordmark.svg" alt="TRACI" width={420} height={87}/></div>
+    <div className="architecture-label"><span className="mono">{t("TRACI / SYSTEM OVERVIEW")}</span><Image className="architecture-wordmark" src="/brand/traci-digital-wordmark.svg" alt="TRACI" width={980} height={167}/></div>
     <div className="architecture-flow">
       <div className="architecture-node"><strong>{t("Devices")}</strong><span>{t("Cameras \u00B7 Sensors \u00B7 Gateways")}</span></div>
       <Connection />
