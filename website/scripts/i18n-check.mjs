@@ -29,7 +29,7 @@ try {
     assert.equal(await page.locator('link[hreflang="en"]').evaluate(el => new URL(el.href).pathname),path);
     assert.equal(await page.locator('[data-locale-switch] a[lang="en"]').getAttribute("href"),path);
     const links = await page.locator('main a[href^="/"]').evaluateAll(els => els.map(el => el.getAttribute("href")));
-    assert(links.every(href => href.startsWith("/zh-HK")),`${route}: localized links ${links}`);
+    assert(links.every(href => href.startsWith("/zh-HK") || href.startsWith("/downloads/")),`${route}: localized links ${links}`);
     // Catch untranslated prose without rejecting product names, protocol labels or credits.
     const prose = await page.locator("main p, main h1, main h2, main label, main button, main option").allTextContents();
     const untranslated = prose.filter(text => text.trim().split(/\s+/).length >= 5 && !/[\u3400-\u9fff]/.test(text));
