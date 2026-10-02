@@ -608,7 +608,7 @@
     "anchors": []
   },
   "/products": {
-    "text": "PRODUCTSHardwareyoucandeploy.Specifiedforyoursite.SelectedEmbuildedhardwarewithconfirmedspecifications,configurationsandengineeringsupportfromsupplytocommissioning.GASDETECTION·HNAG1000-4-STXMulti-GasDetectorAmobile,continuouslymonitoringmulti-gasdetectorforcombustiblegas,oxygen,carbonmonoxideandhydrogensulfide,withon-sitealarmsandremotedatatransmission.CombustiblegasOxygen(O₂)Carbonmonoxide(CO)Hydrogensulfide(H₂S)ViewproductOneplatform,configuredpersite.EachproductconnectsintothewiderEmbuildeddeliverymodel:fieldengineeringfordeployment,TRACIfortelemetry,eventsandevidence,andOpen4Sintegrationwiththesystemsyouroperationalreadyuses.SeetherelatedsolutionNeedhardwarespecifiedforyoursite?Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "text": "PRODUCTSHardwareyoucandeploy.Specifiedforyoursite.SelectedEmbuildedhardwarewithconfirmedspecifications,configurationsandengineeringsupportfromsupplytocommissioning.GASDETECTION·HNAG1000-4-STXPortableOnlineFourGasDetectorContinuousmonitoringofEX,O2,COandH2S,withlocalaudibleandvisualalarmsandremotedatatransmission.Combustiblegas(EX)Oxygen(O₂)Carbonmonoxide(CO)Hydrogensulfide(H₂S)ViewproductOneplatform,configuredpersite.EachproductconnectsintothewiderEmbuildeddeliverymodel:fieldengineeringfordeployment,TRACIfortelemetry,eventsandevidence,andOpen4Sintegrationwiththesystemsyouroperationalreadyuses.SeetherelatedsolutionNeedhardwarespecifiedforyoursite?Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
     "header": "TRACIOpen4SSolutionsDevicesProductsAboutLet’stalk",
     "footer": "Embeddedintelligenceforthebuiltworld.ExploreTRACIOpen4SSolutionsDevicesConnectProductsAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
     "title": "Products | Embuilded",
@@ -619,7 +619,7 @@
       ],
       [
         "H2",
-        "Multi-GasDetector"
+        "PortableOnlineFourGasDetector"
       ],
       [
         "H2",
@@ -1191,14 +1191,14 @@
     "anchors": []
   },
   "/products/multi-gas-detector": {
-    "text": "ProductsMulti-GasDetectorGASDETECTION·HNAG1000-4-STXMulti-GasDetectorAmobile,continuouslymonitoringmulti-gasdetectorforcombustiblegas,oxygen,carbonmonoxideandhydrogensulfide,withon-sitealarmsandremotedatatransmission.Let’stalkHNAG1000-4-STXCombustiblegasOxygen(O₂)Carbonmonoxide(CO)Hydrogensulfide(H₂S)Builtforcontinuousfieldmonitoring.TheHNAG1000-4-STXbringscontinuousmulti-gasmonitoringintofieldoperations.Itmeasuresgasconcentrationsaroundtheclock,displaysreadingsona2.5-inchcolourscreen,raisesaudibleandvisualalarmswhenlimitsareexceeded,andtransmitsdataremotelyovercellularorlow-powerwirelessnetworks.Sensorcombinationscanbeconfiguredforasinglegasoruptofourgases,usingestablishedelectrochemicalandcatalytic-combustionsensingprinciples.Thedie-castaluminiumenclosurewithfluorocarbonsurfacetreatmentisbuiltforhazardousareasanddemandingsiteconditions,andtherechargeablebatterysupportsextendedmobileoperationwithoutmainspower.Configurations,sensorcombinationsandintegrationscopeareconfirmedagainstyoursiterequirementsduringprojectscoping.Keyfeatures.Intrinsicallysafecircuitdesignwithexplosion-proofconstruction;lightningandstaticprotectionandreverse-polarityprotectionsupportreliablefieldoperation.Infraredremotecontrolallowsalarm-pointadjustment,calibrationandmenuoperationwithoutopeningtheenclosure.Selectableinterfacelanguageandfreelyswitchablegasconcentrationunits,includingppm,mg/m³,%Voland%LEL.2.5-inchcolourdisplaypresentsonetofourgasconcentrationssimultaneouslywithicon-drivenmenus.Automaticzerotrackingwithtemperaturecompensationandmulti-stagecalibrationkeepsreadingsstableacrosssiteconditions.Datarecoverywithautomaticrecognitionandblockingofcalibrationmisusepreventsconfigurationerrors.Modulargascombinationsfromsingle-gastofour-gasconfigurationsaroundthesameplatform.Specifications.GasesCombustiblegas,oxygen,carbonmonoxide,hydrogensulfideDetectionprincipleElectrochemical,catalyticcombustionMeasuringrangesEX0–100%LEL·O₂0–30%Vol·CO0–500ppm·H₂S0–100ppm(furtherrangesonrequest)ResolutionEX0.1%LEL·O₂0.1%Vol·CO1ppm·H₂S0.1ppmAccuracy±2%F.SResponsetimeT90<10sOperatingtemperature−30~50℃Operatinghumidity0–95%RHStoragetemperature−40~70℃Warm-uptime10sOperatingcurrent≤50mAOperatingpressure86–106kPaSupplyvoltage12–30VDCBatteryRechargeablelithium2800mAh(24V);over12hoperationinfour-gasmodewithoutpumpOutput&connectivityGPRS,4G,Wi-Fi,LoRa,ZigBee;localaudibleandvisualalarmwithrelayoptionsEnclosureDie-castaluminiumwithfluorocarboncoating,IP66ExplosionratingExdIICT6Dimensions460×340×115mm(H×W×D)InstallationFloor-standingormobiledeploymentServicelife3–5yearsWarranty1yearSpecificationsarebasedontheproductdatasheetformodelHNAG1000-4-STX.Certifiedratingsandsuitabilityareconfirmedperdeployment.Whereitworks.Typicaldeploymentcontextsforthisproductfamily.Oil&petrochemicalChemical&pharmaceuticalplantsSmelting,steel&coaloperationsThermalpower&boilerroomsEnvironmental&emissionsmonitoringSewageandwastetreatmentTunnel&undergroundconstructionFuelstations,gaspipelines&LPGfacilitiesIndoorairquality&confined-spaceentryHazardous-areasafetyprotectionDimensions&interfaces.Connectthewiderpicture.GasMonitoringConnectgasmonitoringwithsitealertsandoperationalevidence.ExploresolutionLet’sscopeyourmulti-gasdetectorrequirements.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "text": "ProductsPortableOnlineFourGasDetectorGASDETECTION·HNAG1000-4-STXPortableOnlineFourGasDetectorContinuousmonitoringofEX,O2,COandH2S,withlocalaudibleandvisualalarmsandremotedatatransmission.Let’stalkDownloaddatasheetHNAG1000-4-STXCombustiblegas(EX)Oxygen(O₂)Carbonmonoxide(CO)Hydrogensulfide(H₂S)Builtforcontinuousfieldmonitoring.TheHNAG1000-4-STXbrings24-hourconnectedgasmonitoringintofieldoperations.A2.5-inchcolourdisplaypresentsonetofourgasconcentrationssimultaneously,localaudibleandvisualalarmstriggerwhenlimitsareexceeded,andbuilt-intemperatureandhumiditysensingaddsenvironmentalcontext.ReadingstransmitremotelyoverGPRS,4G,Wi-Fi,LoRaorZigBee,sositeteamsandcontrolroomsseethesamelivepicture.Sensorcombinationscanbeconfiguredforasinglegasoruptofourgases,usingestablishedelectrochemicalandcatalytic-combustionsensingprinciples.Thedie-castaluminiumenclosurewithfluorocarbonsurfacetreatmentisbuiltforhazardousareasanddemandingsiteconditions,andtherechargeablebatterysupportsextendedmobileoperationwithoutmainspower.Configurations,sensorcombinationsandintegrationscopeareconfirmedagainstyoursiterequirementsduringprojectscoping.Keyfeatures.24-hourconnectedmonitoringofEX,O2,COandH2S.2.5-inchcolourdisplaypresentsonetofourgasconcentrationssimultaneouslywithicon-drivenmenus.Localaudibleandvisualalarms,withrelayoptionsforon-sitesignalling.Temperatureandhumiditysensingaddsenvironmentalcontexttogasreadings.RemotedatatransmissionoverGPRS,4G,Wi-Fi,LoRaorZigBee.Explosion-proofIP66enclosure,ratedExdIICT6forhazardousareas.Over16hoursofsingle-gasor12hoursoffour-gasbatteryoperationwithoutpump.Specifications.TargetgasesEX/O₂/CO/H₂SMeasuringrangesEX0–100%LEL·O₂0–30%vol·CO0–500ppm·H₂S0–100ppmResolutionEX0.1%LEL·O₂0.1%vol·CO1ppm·H₂S0.1ppmAccuracy&response±2%F.S.·T90<10sEnvironment−30to50℃·0–95%RH·86–106kPaSupply12–30VDC·≤50mAProtectionIP66·ExdIICT6WirelessGPRS,4G,Wi-Fi,LoRaandZigBeeRuntimeOver16hsinglegas·over12hfourgaswithoutpumpDimensions460H×340W×115DmmWarranty1year·expectedservicelife3–5yearsSpecificationsarebasedontheproductdatasheetformodelHNAG1000-4-STX.Certifiedratingsandsuitabilityareconfirmedperdeployment.Whereitworks.Typicaldeploymentcontextsforthisproductfamily.Oil&gasChemicalprocessingSteelPowerWastewaterTunnelsHazardous-areasafetyDimensions&interfaces.Connectthewiderpicture.GasMonitoringConnectgasmonitoringwithsitealertsandoperationalevidence.ExploresolutionLet’sscopeyourportableonlinefourgasdetectorrequirements.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
     "header": "TRACIOpen4SSolutionsDevicesProductsAboutLet’stalk",
     "footer": "Embeddedintelligenceforthebuiltworld.ExploreTRACIOpen4SSolutionsDevicesConnectProductsAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
-    "title": "Multi-Gas Detector | Embuilded",
+    "title": "Portable Online Four Gas Detector | Embuilded",
     "headings": [
       [
         "H1",
-        "Multi-GasDetector"
+        "PortableOnlineFourGasDetector"
       ],
       [
         "H2",
@@ -1230,7 +1230,7 @@
       ],
       [
         "H2",
-        "Let’sscopeyourmulti-gasdetectorrequirements."
+        "Let’sscopeyourportableonlinefourgasdetectorrequirements."
       ]
     ],
     "links": [
@@ -1239,8 +1239,12 @@
         "Products"
       ],
       [
-        "/contact?service=Multi-Gas%20Detector",
+        "/contact?service=Portable%20Online%20Four%20Gas%20Detector",
         "Let’stalk"
+      ],
+      [
+        "/downloads/HNAG1000-4-STX-data-sheet.svg",
+        "Downloaddatasheet"
       ],
       [
         "/solutions/gas-monitoring",
