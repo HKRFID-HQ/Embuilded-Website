@@ -33,6 +33,9 @@ try {
   const context = await browser.newContext({ reducedMotion: "reduce", colorScheme: "light" });
   await instrument(context);
   const page = await context.newPage();
+  // First visit at each viewport size pays cold on-demand image optimization;
+  // match visual-review.mjs and give navigations generous headroom.
+  page.setDefaultNavigationTimeout(90000);
   page.on("pageerror", error => report.errors.push(error.message));
   for (const width of [375, 768, 960, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
