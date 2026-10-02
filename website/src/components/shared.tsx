@@ -1,7 +1,7 @@
 import { useCopy } from "@/i18n/copy";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { ArrowRight, ArrowUpRight, Check } from "@phosphor-icons/react/dist/ssr";
 import { navigation, services } from "@/content/site";
 import { photography } from "@/content/photography";
@@ -43,8 +43,12 @@ export function PageHeroImage({ scene, className = "" }: { scene: PageHeroScene;
  const media = pageHeroScenes[scene];
  return <div className={`page-hero-media ${className}`} data-page-hero><Image src={media.src} alt="" fill priority sizes="(max-width: 767px) 100vw, 46vw" style={{ objectPosition: media.position }}/><span aria-hidden="true"/></div>;
 }
-export function PageHeroBrochure({ src, alt, href, linkLabel, className = "" }: { src: string; alt: string; href: string; linkLabel: string; className?: string }) {
- return <div className={`page-hero-media page-hero-brochure ${className}`} data-page-hero><a href={href} download className="page-hero-brochure-link" aria-label={linkLabel}>{/* eslint-disable-next-line @next/next/no-img-element */}<img src={src} alt={alt}/></a><span aria-hidden="true"/></div>;
+export function PageHeroVisual({ src, alt, href, linkLabel, fit = "cover", position, className = "" }: { src: string; alt: string; href?: string; linkLabel?: string; fit?: "cover" | "contain"; position?: string; className?: string }) {
+ const style: CSSProperties = { objectFit: fit };
+ if (position) style.objectPosition = position;
+ // eslint-disable-next-line @next/next/no-img-element
+ const img = <img src={src} alt={alt} className="page-hero-visual-img" style={style}/>;
+ return <div className={`page-hero-media page-hero-brochure ${className}`} data-page-hero>{href ? <a href={href} download className="page-hero-brochure-link" aria-label={linkLabel}>{img}</a> : img}<span aria-hidden="true"/></div>;
 }
 export function BuildingImage({ className = "", priority = false }: { className?: string; priority?: boolean }) {
  const t = useCopy(); const photo=photography.construction;

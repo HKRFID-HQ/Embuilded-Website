@@ -20,7 +20,7 @@ h2 { font-size: clamp(32px, 3.8vw, 54px); line-height: 1.12; }
 .page-hero-media img { object-fit: cover; transform: scale(1.015); }
 .page-hero-brochure { background: #ffffff; }
 .page-hero-brochure-link { position: absolute; inset: 0; display: block; }
-.page-hero-brochure-link img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 12%; }
+.page-hero-visual-img { width: 100%; height: 100%; display: block; object-position: center 12%; }
 .page-hero-brochure-link:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
 .solution-page-intro { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(340px, .8fr); gap: 34px 70px; align-items: stretch; }
 .solution-page-intro > .breadcrumb { grid-column: 1 / -1; margin: 0; }

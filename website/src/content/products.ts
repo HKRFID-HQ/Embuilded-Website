@@ -10,6 +10,7 @@ export type Product = {
   specifications: [string, string][];
   applications: string[];
   image: string;
+  heroImage?: string;
   diagram: string;
   solution: string;
   dataSheet: string;
@@ -50,6 +51,7 @@ export const products: Product[] = [
       "Oil & gas", "Chemical processing", "Steel", "Power", "Wastewater", "Tunnels", "Hazardous-area safety"
     ],
     image: "/images/products/gas-detector-variants.jpg",
+    heroImage: "/images/products/hnag1000-4-stx.jpg",
     diagram: "/images/products/gas-detector-dimensions.jpg",
     solution: "gas-monitoring",
     dataSheet: "/downloads/HNAG1000-4-STX-data-sheet.svg"
