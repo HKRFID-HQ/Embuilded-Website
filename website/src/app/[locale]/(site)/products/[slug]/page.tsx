@@ -40,5 +40,5 @@ export default async function ProductPage({ params }: {
     <section className="section wrap"><div className="section-heading"><h2>{t("Where it works.")}</h2><p>{t("Typical deployment contexts for this product family.")}</p></div><ul className="app-tags">{product.applications.map(item => <li key={item}>{t(item)}</li>)}</ul></section>
     <section className="page-panel"><div className="wrap"><div className="section-heading"><h2>{t("Dimensions & interfaces.")}</h2></div><div className="product-diagram"><Image src={product.diagram} alt={`${t(product.title)} — ${t("dimension and interface diagram")}`} width={1800} height={1000} sizes="(max-width: 767px) 100vw, 90vw"/></div></div></section>
     {solution ? <section className="section wrap"><div className="section-heading"><h2>{t("Connect the wider picture.")}</h2></div><div className="capability-grid"><article><h3>{t(solution.title)}</h3><p>{t(solution.description)}</p><Link className="text-link" href={`/solutions/${solution.slug}`}>{t("Explore solution")}<ArrowUpRight size={18} aria-hidden="true"/></Link></article></div></section> : null}
-    <ContactBand title={`Let’s scope your ${product.title.toLowerCase()} requirements.`}/></>;
+    <ContactBand title={t("Let’s scope your %PRODUCT% requirements.").replace("%PRODUCT%", t(product.title))}/></>;
 }
