@@ -43,6 +43,9 @@ export function PageHeroImage({ scene, className = "" }: { scene: PageHeroScene;
  const media = pageHeroScenes[scene];
  return <div className={`page-hero-media ${className}`} data-page-hero><Image src={media.src} alt="" fill priority sizes="(max-width: 767px) 100vw, 46vw" style={{ objectPosition: media.position }}/><span aria-hidden="true"/></div>;
 }
+export function PageHeroBrochure({ src, alt, href, linkLabel, className = "" }: { src: string; alt: string; href: string; linkLabel: string; className?: string }) {
+ return <div className={`page-hero-media page-hero-brochure ${className}`} data-page-hero><a href={href} download className="page-hero-brochure-link" aria-label={linkLabel}>{/* eslint-disable-next-line @next/next/no-img-element */}<img src={src} alt={alt}/></a><span aria-hidden="true"/></div>;
+}
 export function BuildingImage({ className = "", priority = false }: { className?: string; priority?: boolean }) {
  const t = useCopy(); const photo=photography.construction;
  return <figure className={`concept-image ${className}`} data-building-photo><div className="concept-image-frame"><Image src={photo.src} alt={t(photo.alt)} fill sizes={priority ? "100vw" : "(max-width: 767px) calc(100vw - 48px), 50vw"} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : undefined} style={{objectPosition:photo.position}} /></div></figure>;
