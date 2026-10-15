@@ -1,5 +1,9 @@
 # Verification Record
 
+## Hook Cam component specification cards — 15 October 2026 (revision)
+
+Following client feedback that the standalone specification tables felt disconnected from the component grid, the three specification groups were folded into the six component cards: each card now shows its photograph, role and key specifications, with the sensor accuracy note and battery safety note kept as card footnotes. The separate "Specifications." section renders only when a product actually defines specification rows, so the gas detector page is unchanged. The content snapshot fixture was recaptured (diff confined to `/products/hook-cam`); browser suite passed with zero accessibility violations and no broken images.
+
 ## Hook Cam product page and Insights section — 15 October 2026
 
 The Hook Cam lifting visibility kit is published as a second product at `/products/hook-cam`, built entirely from the client-supplied three-part data sheet (`references/product-brochures/Hook cam ref/svg-v3/`): kit hero photograph, six-component configuration grid, camera (reCamera Pro 4GB), height-sensor (Benewake TF02-Pro) and power/connectivity specification groups, deployment contexts and all three data sheets as downloads. Source SVGs totalling 15.6 MB were recompressed to roughly 1.4 MB for public download. The product template was generalised: `gases` became `tags`, specification groups and the component grid are optional, and the hero falls back from product photo to data sheet to scene photography.

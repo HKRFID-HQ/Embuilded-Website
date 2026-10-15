@@ -251,6 +251,12 @@ h2 { font-size: clamp(32px, 3.8vw, 54px); line-height: 1.12; }
 .component-media img { max-height: 130px; width: auto; max-width: 100%; object-fit: contain; }
 .component-card h3 { font-size: 19px; margin: 0; }
 .component-card p { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.6; }
+.component-specs { margin: 6px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 0; }
+.component-spec-row { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--line); }
+.component-spec-row:last-child { border-bottom: none; }
+.component-spec-row dt { font-size: 12px; letter-spacing: .04em; color: var(--muted); }
+.component-spec-row dd { margin: 0; font-size: 13px; line-height: 1.5; }
+.component-note { margin: 4px 0 0 !important; font-size: 12px !important; color: var(--muted); line-height: 1.55 !important; }
 .spec-group + .spec-group { margin-top: 56px; }
 .spec-group-title { font-size: clamp(20px, 2vw, 26px); margin: 0; }
 .insights-filter { margin-bottom: 46px; }

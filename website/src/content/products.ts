@@ -2,6 +2,8 @@ export type ProductComponent = {
   name: string;
   detail: string;
   image?: string;
+  specs?: [string, string][];
+  note?: string;
 };
 
 export type Product = {
@@ -80,10 +82,12 @@ export const products: Product[] = [
       "Open4S-ready: share camera and sensor data with third-party platforms in their preferred formats."
     ],
     tags: ["4K edge AI camera", "ToF height sensing", "4G connectivity", "Local siren", "Quick-swap battery"],
-    specGroups: [
+    components: [
       {
-        title: "Camera — reCamera Pro 4GB",
-        rows: [
+        name: "reCamera Pro 4GB",
+        detail: "4K edge AI camera",
+        image: "/images/products/hookcam-camera.jpg",
+        specs: [
           ["Image sensor", "SC850SL; up to 4K at 30 fps"],
           ["Processor", "RV1126B; quad-core Cortex-A53, 1.2 GHz"],
           ["AI accelerator", "3 TOPS; INT8 / INT16 mixed computation"],
@@ -95,9 +99,11 @@ export const products: Product[] = [
         ]
       },
       {
-        title: "Height sensing — Benewake TF02-Pro",
+        name: "Benewake TF02-Pro",
+        detail: "Height / distance reference",
+        image: "/images/products/hookcam-sensor.png",
         note: "Sensor range depends on target reflectivity and viewing conditions. Manufacturer accuracy is specified on a 90% reflective target at 25 °C. Height reference depends on sensor alignment and mounting position.",
-        rows: [
+        specs: [
           ["Measurement range", "0.1–40 m at 90% reflectivity; 0.1–13.5 m at 10% reflectivity"],
           ["Accuracy", "±5 cm (0.1–5 m); ±1% (5–40 m)"],
           ["Resolution", "1 cm"],
@@ -111,27 +117,42 @@ export const products: Product[] = [
         ]
       },
       {
-        title: "Power & connectivity — configuration targets",
-        note: "Battery, router, siren and PoE values are configuration targets. Final system dimensions, weight, enclosure rating and operating time depend on the selected assembly. A 24 V-class battery must not be connected directly; regulated DC / PoE distribution matched to each device is required.",
-        rows: [
+        name: "Quick-swap battery",
+        detail: "24 V-class / 500–600 Wh target",
+        image: "/images/products/hookcam-battery.jpg",
+        note: "Battery values are configuration targets. A 24 V-class battery must not be connected directly; regulated DC / PoE distribution matched to each device is required.",
+        specs: [
           ["Battery chemistry", "Lithium iron phosphate (LiFePO4)"],
           ["System voltage", "24 V-class; final nominal voltage to be confirmed"],
           ["Energy capacity", "500–600 Wh design target"],
           ["Battery exchange", "Quick-swap pack; connector and latch to be confirmed"],
-          ["Protection", "BMS and fused output"],
-          ["4G router", "4G LTE with deployment-region bands; Ethernet uplink; external antennas"],
-          ["PoE module", "DC-input PoE injector with regulated output"],
-          ["Local siren", "External audible alert unit with matched DC supply and control interface"]
+          ["Protection", "BMS and fused output"]
+        ]
+      },
+      {
+        name: "4G router",
+        detail: "Cellular connectivity",
+        image: "/images/products/hookcam-router.png",
+        specs: [
+          ["Connectivity", "4G LTE with deployment-region bands; Ethernet uplink; external antennas"]
+        ]
+      },
+      {
+        name: "PoE power module",
+        detail: "Camera power + Ethernet",
+        image: "/images/products/hookcam-poe.jpg",
+        specs: [
+          ["Power delivery", "DC-input PoE injector with regulated output"]
+        ]
+      },
+      {
+        name: "Local siren",
+        detail: "Audible site alerts",
+        image: "/images/products/hookcam-siren.jpg",
+        specs: [
+          ["Alert output", "External audible alert unit with matched DC supply and control interface"]
         ]
       }
-    ],
-    components: [
-      { name: "reCamera Pro 4GB", detail: "4K edge AI camera", image: "/images/products/hookcam-camera.jpg" },
-      { name: "4G router", detail: "Cellular connectivity", image: "/images/products/hookcam-router.png" },
-      { name: "Local siren", detail: "Audible site alerts", image: "/images/products/hookcam-siren.jpg" },
-      { name: "Quick-swap battery", detail: "24 V-class / 500–600 Wh target", image: "/images/products/hookcam-battery.jpg" },
-      { name: "PoE power module", detail: "Camera power + Ethernet", image: "/images/products/hookcam-poe.jpg" },
-      { name: "Benewake TF02-Pro", detail: "Height / distance reference", image: "/images/products/hookcam-sensor.png" }
     ],
     applications: [
       "Tower crane lifting", "Mobile crane operations", "Material hoisting", "Blind-lift support", "Lifting-zone safety", "Heavy plant handling"
