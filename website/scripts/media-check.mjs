@@ -37,6 +37,17 @@ try {
   // match visual-review.mjs and give navigations generous headroom.
   page.setDefaultNavigationTimeout(90000);
   page.on("pageerror", error => report.errors.push(error.message));
+  // Cold on-demand image optimization on a fresh runner can exceed any reasonable
+  // navigation timeout when several photos are encoded at once. Warm every srcset
+  // candidate over plain HTTP first — afterwards browser navigations hit the cache.
+  for (const route of ["/", "/solutions"]) {
+    const html = await (await context.request.get(base + route)).text();
+    const candidates = new Set([...html.matchAll(/srcset="([^"]+)"/g)].flatMap(match => match[1].split(",").map(part => part.trim().split(" ")[0])).filter(url => url.startsWith("/_next/image")));
+    for (const url of candidates) {
+      const response = await context.request.get(base + url.replaceAll("&amp;", "&"), { timeout: 180000 });
+      assert(response.ok(), `Image warm-up failed: ${url}`);
+    }
+  }
   for (const width of [375, 768, 960, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
     for (const route of ["/", "/solutions"]) {
