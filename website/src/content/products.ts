@@ -161,9 +161,7 @@ export const products: Product[] = [
     heroImage: "/images/products/hookcam-kit.jpg",
     solution: "hookcam",
     dataSheets: [
-      { label: "Data sheet 01 — System overview", href: "/downloads/TRACI-HookCam-01-system-overview.svg" },
-      { label: "Data sheet 02 — Camera & sensor", href: "/downloads/TRACI-HookCam-02-camera-sensor.svg" },
-      { label: "Data sheet 03 — Power & connectivity", href: "/downloads/TRACI-HookCam-03-power-connectivity.svg" }
+      { label: "Download data sheet", href: "/downloads/TRACI-HookCam-datasheet.pdf" }
     ]
   }
 ];
