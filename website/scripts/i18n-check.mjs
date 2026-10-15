@@ -6,7 +6,7 @@ import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 
 const base = process.env.TEST_BASE_URL ?? "http://127.0.0.1:3000";
-const paths = ["/", "/traci", "/open4s", "/solutions", "/devices", "/products", "/about", "/contact", "/solutions/gas-monitoring", "/solutions/hookcam", "/solutions/outrigger-monitoring", "/solutions/worker-tracking", "/solutions/site-vision", "/solutions/rfid-asset-tracking", "/products/multi-gas-detector"];
+const paths = ["/", "/traci", "/open4s", "/solutions", "/devices", "/products", "/products/hook-cam", "/insights", "/insights/hook-cam-lifting-visibility", "/insights/hnag1000-4-stx-connected-gas-detection", "/insights/open4s-two-way-integration", "/insights/lifting-visibility-safety-workflow", "/about", "/contact", "/solutions/gas-monitoring", "/solutions/hookcam", "/solutions/outrigger-monitoring", "/solutions/worker-tracking", "/solutions/site-vision", "/solutions/rfid-asset-tracking", "/products/multi-gas-detector"];
 const output = new URL("../../.artifacts/bilingual/", import.meta.url);
 await mkdir(output, {recursive:true});
 const executablePath = process.env.TEST_BROWSER_PATH ?? ["C:/Program Files/Google/Chrome/Application/chrome.exe", "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"].find(existsSync);
@@ -38,7 +38,7 @@ try {
   }
   for (const width of [375,768,960,1440]) {
     await page.setViewportSize({width,height:1000});
-    for (const route of ["/zh-HK", "/zh-HK/traci", "/zh-HK/solutions", "/zh-HK/devices", "/zh-HK/products", "/zh-HK/products/multi-gas-detector", "/zh-HK/contact", "/zh-HK/solutions"]) {
+    for (const route of ["/zh-HK", "/zh-HK/traci", "/zh-HK/solutions", "/zh-HK/devices", "/zh-HK/products", "/zh-HK/products/multi-gas-detector", "/zh-HK/products/hook-cam", "/zh-HK/insights", "/zh-HK/insights/hook-cam-lifting-visibility", "/zh-HK/contact", "/zh-HK/solutions"]) {
       await page.goto(base+route);
       await page.evaluate(() => document.fonts.ready);
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),`${route} ${width}: overflow`);
@@ -117,5 +117,5 @@ try {
   report.interactions.push("Unknown pages and solution slugs retain the locale and return 404");
   assert.deepEqual(errors,[]);
   await writeFile(new URL("report.json",output),JSON.stringify(report,null,2));
-  console.log("PASS: 16 Chinese routes, localized metadata and links, 24 responsive layouts, 8 accessibility audits, bilingual interactions and no-JavaScript rendering.");
+  console.log(`PASS: ${report.routes.length} Chinese routes, localized metadata and links, ${report.layouts.length} responsive layouts, bilingual interactions and no-JavaScript rendering.`);
 } finally {await browser.close();}
