@@ -69,6 +69,9 @@ Every route has an English version and a Traditional Chinese version under `/zh-
 | Industries | `/industries` | Construction, infrastructure, property/facilities and industrial contexts |
 | About | `/about` | Company and brand architecture |
 | Contact | `/contact` | Inquiry form and project-brief download |
+| Insights | `/insights` | Filterable Product / Case study / Open4S / Industry articles with `/insights/[slug]` detail pages |
+
+Product detail routes are `/products/multi-gas-detector` (HNAG1000-4-STX) and `/products/hook-cam` (TRACI Hook Cam kit). The product template supports optional tags, specification groups, a component grid, a dimension diagram and multiple data-sheet downloads; the hero falls back from product photo to data sheet to scene photography.
 
 Solution detail routes are:
 

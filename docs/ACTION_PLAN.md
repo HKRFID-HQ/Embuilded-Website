@@ -1,5 +1,13 @@
 # Embuilded Website Delivery Plan
 
+## Hook Cam product and Insights section — 15 October 2026
+
+Add a second product page from the supplied Hook Cam three-part data sheet and open a bilingual Insights section for product, case-study, Open4S and industry content. The product template now supports per-product tags, specification groups, a component grid and multiple data-sheet downloads. Insights ships with four seed articles and joins navigation, the footer, the sitemap and every browser test suite. Delivered in commits `268d12c` and `fd7f19f`; CI run 38684845640 passed; live on `https://www.embuilded.com`.
+
+## Public domain launch — 2 October 2026
+
+Cut over from Wix to Vercel on `www.embuilded.com` (apex 308 to `www`), with DNS rollback records in `docs/ops/dns-migration-2026-10.md` and `SITE_URL` set for correct canonical metadata. The product hero now leads with the single-unit photograph extracted from the client data sheet.
+
 ## Approved logo integration — 30 September 2026
 
 Replace the temporary typed Embuilded and TRACI marks with the supplied company SVG assets. Use the complete Embuilded horizontal lockup in the header and footer, the supplied Embuilded app icon for browser/application metadata, and the TRACI digital wordmark in the platform architecture. Preserve source hashes and an accessible inverse footer variant in the internal brand record. Publish this iteration to the personal repository while organization access remains pending.

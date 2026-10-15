@@ -1,5 +1,21 @@
 # Verification Record
 
+## Hook Cam product page and Insights section — 15 October 2026
+
+The Hook Cam lifting visibility kit is published as a second product at `/products/hook-cam`, built entirely from the client-supplied three-part data sheet (`references/product-brochures/Hook cam ref/svg-v3/`): kit hero photograph, six-component configuration grid, camera (reCamera Pro 4GB), height-sensor (Benewake TF02-Pro) and power/connectivity specification groups, deployment contexts and all three data sheets as downloads. Source SVGs totalling 15.6 MB were recompressed to roughly 1.4 MB for public download. The product template was generalised: `gases` became `tags`, specification groups and the component grid are optional, and the hero falls back from product photo to data sheet to scene photography.
+
+A new bilingual Insights section (`/insights`, four article routes) covers Product, Case study, Open4S and Industry categories with a filterable index, editorial article pages with contextual hero photography, and navigation, footer, sitemap and test-suite integration. Ninety-five new Traditional Chinese translations were added; no customer names, projects or performance claims were invented.
+
+Local validation passed: protected-source verification, the webpack production build (Turbopack remains broken on this machine), seven unit tests, 21-route content snapshot recapture and verification, browser suite (21 routes, 48 layouts, zero accessibility violations), bilingual checks and media checks. CI required two test-hardening fixes first landed in `aeb97bf` and `1ac5170`: the layout-overflow loop no longer waits for full image loads, and `media-check` now warms every srcset candidate over plain HTTP before browser navigation after cold AVIF encoding exceeded a 90-second navigation budget on CI.
+
+Implementation commits [`268d12c`](https://github.com/HKRFID-HQ/Embuilded-Website/commit/268d12cd1e3337c7c02d5d861c0524994cfe42dd) and [`fd7f19f`](https://github.com/HKRFID-HQ/Embuilded-Website/commit/fd7f19f6dfbecb0fbe674155e443925be9c5ecb4) passed [GitHub Actions run 38684845640](https://github.com/HKRFID-HQ/Embuilded-Website/actions/runs/38684845640). Live checks on `https://www.embuilded.com` returned 200 for `/products/hook-cam`, `/insights`, the Chinese article route, the Hook Cam data-sheet download and the sitemap (which now lists product and insight routes).
+
+## Public domain cutover — 2 October 2026
+
+The site went live on `https://www.embuilded.com`: Cloudflare DNS moved from the former Wix records (three A records plus a www CNAME, archived with rollback steps in `docs/ops/dns-migration-2026-10.md`) to the Vercel-assigned verification CNAME, with the apex redirecting (308) to `www`. `SITE_URL=https://www.embuilded.com` is set in Vercel production so canonical links, Open Graph URLs and the sitemap use the public domain. Vercel serves the organization repository `HKRFID-HQ/Embuilded-Website`.
+
+The same iteration replaced the multi-gas-detector hero with the client data sheet, then with a clean single-unit product photograph extracted from that brochure (manufacturer marks cropped out), via the generalised `PageHeroVisual` component.
+
 ## Approved brand asset integration — 30 September 2026
 
 The supplied Embuilded horizontal lockup, Embuilded application icon and TRACI digital wordmark were copied into the self-hosted website assets. The header and footer now use the approved Embuilded mark; the footer uses a documented inverse accessibility variant. The TRACI platform diagram uses the supplied vector wordmark, and the Next.js application icon uses the supplied app-icon SVG. Source filenames and SHA-256 hashes are recorded in [`BRAND_ASSETS.md`](BRAND_ASSETS.md).
