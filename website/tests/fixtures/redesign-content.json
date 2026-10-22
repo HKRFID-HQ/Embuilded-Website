@@ -608,7 +608,7 @@
     "anchors": []
   },
   "/products": {
-    "text": "PRODUCTSHardwareyoucandeploy.Specifiedforyoursite.SelectedEmbuildedhardwarewithconfirmedspecifications,configurationsandengineeringsupportfromsupplytocommissioning.GASDETECTION·HNAG1000-4-STXPortableOnlineFourGasDetectorContinuousmonitoringofEX,O2,COandH2S,withlocalaudibleandvisualalarmsandremotedatatransmission.Combustiblegas(EX)Oxygen(O₂)Carbonmonoxide(CO)Hydrogensulfide(H₂S)ViewproductSITEVISIBILITY·TRACIHookCamHookCamLiftingVisibilityKitAcloserviewofeverylift—oneconnectedkitcombiningvideo,heightsensing,4Gconnectivityandlocalalerts,poweredbyaquick-swapLiFePO4battery.4KedgeAIcameraToFheightsensing4GconnectivityLocalsirenQuick-swapbatteryViewproductOneplatform,configuredpersite.EachproductconnectsintothewiderEmbuildeddeliverymodel:fieldengineeringfordeployment,TRACIfortelemetry,eventsandevidence,andOpen4Sintegrationwiththesystemsyouroperationalreadyuses.SeetherelatedsolutionNeedhardwarespecifiedforyoursite?Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "text": "PRODUCTSHardwareyoucandeploy.Specifiedforyoursite.SelectedEmbuildedhardwarewithconfirmedspecifications,configurationsandengineeringsupportfromsupplytocommissioning.GASDETECTION·HNAG1000-4-STXPortableOnlineFourGasDetectorContinuousmonitoringofEX,O2,COandH2S,withlocalaudibleandvisualalarmsandremotedatatransmission.Combustiblegas(EX)Oxygen(O₂)Carbonmonoxide(CO)Hydrogensulfide(H₂S)ViewproductSITEVISIBILITY·TRACIHookCamHookCamLiftingVisibilityKitAcloserviewofeverylift—oneconnectedkitcombiningvideo,heightsensing,4Gconnectivityandlocalalerts,poweredbyaquick-swapLiFePO4battery.4KedgeAIcameraToFheightsensing4GconnectivityLocalsirenQuick-swapbatteryViewproductPLANTMONITORING·TRACIOutriggerKitOutriggerMonitoringKitFourpoints.Oneconnectedkit—trackeachextendingoutriggerwithmagnetic-mountToFsensing,4Gconnectivityandlocalsirenandstrobealerts.ToFdistancesensingMagneticmountingLoRaWAN+4GSiren&strobealertsWaterproofcaseViewproductPERSONNELSAFETY·TRACIConfinedSpaceKitConfinedSpaceSensorKitKnowwhoisinside—BLElocationbeaconsandawearableLoRaWANtrackerconnectpersonneltoa4G-enabledgatewayandtablet.Portableequipment,oneconnectedkit.WearableLoRaWANtrackerBLElocationbeacons4GgatewaySOSalertsPortablekitViewproductOneplatform,configuredpersite.EachproductconnectsintothewiderEmbuildeddeliverymodel:fieldengineeringfordeployment,TRACIfortelemetry,eventsandevidence,andOpen4Sintegrationwiththesystemsyouroperationalreadyuses.SeetherelatedsolutionNeedhardwarespecifiedforyoursite?Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
     "header": "TRACIOpen4SSolutionsDevicesProductsInsightsAboutLet’stalk",
     "footer": "Embeddedintelligenceforthebuiltworld.ExploreTRACIOpen4SSolutionsDevicesConnectProductsInsightsAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
     "title": "Products | Embuilded",
@@ -627,6 +627,14 @@
       ],
       [
         "H2",
+        "OutriggerMonitoringKit"
+      ],
+      [
+        "H2",
+        "ConfinedSpaceSensorKit"
+      ],
+      [
+        "H2",
         "Oneplatform,configuredpersite."
       ],
       [
@@ -641,6 +649,14 @@
       ],
       [
         "/products/hook-cam",
+        "Viewproduct"
+      ],
+      [
+        "/products/outrigger-monitoring-kit",
+        "Viewproduct"
+      ],
+      [
+        "/products/confined-space-sensor-kit",
         "Viewproduct"
       ],
       [
@@ -737,6 +753,186 @@
       ],
       [
         "/solutions/hookcam",
+        "Exploresolution"
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [],
+    "anchors": []
+  },
+  "/products/outrigger-monitoring-kit": {
+    "text": "ProductsOutriggerMonitoringKitPLANTMONITORING·TRACIOutriggerKitOutriggerMonitoringKitFourpoints.Oneconnectedkit—trackeachextendingoutriggerwithmagnetic-mountToFsensing,4Gconnectivityandlocalsirenandstrobealerts.Let’stalkDownloaddatasheetTRACIOutriggerKitToFdistancesensingMagneticmountingLoRaWAN+4GSiren&strobealertsWaterproofcaseBuiltforcontinuousfieldmonitoring.TheOutriggerMonitoringKitwatchesallfouroutriggersatonce.EachextendingsectioncarriesamagnetictargetboardwhileaToFlaserdistancesensorfixedinboardmeasuresthehorizontalrelativedistance,socrewsseeextensionstatusperpointwithoutmanualchecks.ReadingstraveloverLoRaWANtoa4Ggatewayinsidethekit'swaterproofcase,andasirenandstrobegiveimmediateaudibleandvisualalertsonsite.Magneticmountingkeepsdeploymentfastwithnopermanentmodificationtothemachine.Finalmountingpositions,alarmthresholdsandintegrationscopeareconfirmedagainsteachmachineduringscoping.Configurations,sensorcombinationsandintegrationscopeareconfirmedagainstyoursiterequirementsduringprojectscoping.Keyfeatures.Fourmatchedsensor–targetpairstrackeachextendingoutrigger,witha2–350cmdetectionrange.EM400-TLDToFlaserdistancesensingwith±2cmaccuracyfrom−20°Cto+70°C.Magneticmountingforsensorsandtargetboards—nopermanentmodificationtothemachine.8-channelLoRaWANgatewaywith4GLTE/Ethernetbackhaullinksthekittomonitoringworkflows.Localsirenandstrobeprovideaudibleandvisualalertsatthemachine.Waterproofcaseprotectsthecentralequipment;kitdeploysasoneportableunit.Completesystemconfiguration.Oneconnectedkit—eachcomponentwithitskeyspecifications.Finalcomponentmodelsandappearancearesubjecttoconfirmation.01EM400-TLDToFsensor×4Onesensorperoutrigger,fixedinboardTechnologyTime-of-flight(ToF)laserdistancesensingDetectionrange2–350cm;4matchedpairsDetectionaccuracy±2cm(−20°Cto+70°C)Resolution/fieldofview1mm/27°SensorprotectionIP67ratedsensorenclosureLink/configurationLoRaWAN/NFCviaMilesightToolBoxSensorfixedinboard;thetargetmoveswiththeextendingsection.Horizontalrelativedistance;finalmountingandorientationtoconfirm.02Targetboards×4OnematchingtargetpersensorTargetalignmentUprightboardfacingtheinboardsensorMountingMagneticmounts,matchedtoeachsensor03UG63·4Ggateway×1LoRaWANgatewaywithcellularbackhaulSensornetwork8-channelLoRaWANgatewayBackhaul4GLTE/EthernetHousingInstalledinthekit'swaterproofcaseGatewayprotectionIP30—protectedinstallationrequired04Siren&strobeAudibleandvisuallocalalertingAlertoutputSiren/strobeviaamatchedcontrolinterfacePower,cellularserviceandthelocalalarminterfacearematchedduringintegration.05WaterproofcaseProtectivehousingforthecentralequipmentRoleinthekitProtectsgateway,powerandalarminterfaceinoneportableenclosureWhereitworks.Typicaldeploymentcontextsforthisproductfamily.MobilecranesetupOutriggerpositionchecksAerialworkplatformsHeavyplantstabilisationLiftingoperationsDepotandyardhandlingConnectthewiderpicture.OutriggerMonitoringConnectoutriggermonitoringtothewideroperationalworkflow.ExploresolutionLet’sscopeyourOutriggerMonitoringKitrequirements.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "header": "TRACIOpen4SSolutionsDevicesProductsInsightsAboutLet’stalk",
+    "footer": "Embeddedintelligenceforthebuiltworld.ExploreTRACIOpen4SSolutionsDevicesConnectProductsInsightsAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "Outrigger Monitoring Kit | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "OutriggerMonitoringKit"
+      ],
+      [
+        "H2",
+        "Builtforcontinuousfieldmonitoring."
+      ],
+      [
+        "H2",
+        "Keyfeatures."
+      ],
+      [
+        "H2",
+        "Completesystemconfiguration."
+      ],
+      [
+        "H3",
+        "EM400-TLDToFsensor×4"
+      ],
+      [
+        "H3",
+        "Targetboards×4"
+      ],
+      [
+        "H3",
+        "UG63·4Ggateway×1"
+      ],
+      [
+        "H3",
+        "Siren&strobe"
+      ],
+      [
+        "H3",
+        "Waterproofcase"
+      ],
+      [
+        "H2",
+        "Whereitworks."
+      ],
+      [
+        "H2",
+        "Connectthewiderpicture."
+      ],
+      [
+        "H3",
+        "OutriggerMonitoring"
+      ],
+      [
+        "H2",
+        "Let’sscopeyourOutriggerMonitoringKitrequirements."
+      ]
+    ],
+    "links": [
+      [
+        "/products",
+        "Products"
+      ],
+      [
+        "/contact?service=Outrigger%20Monitoring%20Kit",
+        "Let’stalk"
+      ],
+      [
+        "/downloads/TRACI-Outrigger-Kit-datasheet.pdf",
+        "Downloaddatasheet"
+      ],
+      [
+        "/downloads/TRACI-Outrigger-Kit-datasheet.pdf",
+        ""
+      ],
+      [
+        "/solutions/outrigger-monitoring",
+        "Exploresolution"
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [],
+    "anchors": []
+  },
+  "/products/confined-space-sensor-kit": {
+    "text": "ProductsConfinedSpaceSensorKitPERSONNELSAFETY·TRACIConfinedSpaceKitConfinedSpaceSensorKitKnowwhoisinside—BLElocationbeaconsandawearableLoRaWANtrackerconnectpersonneltoa4G-enabledgatewayandtablet.Portableequipment,oneconnectedkit.Let’stalkDownloaddatasheetTRACIConfinedSpaceKitWearableLoRaWANtrackerBLElocationbeacons4GgatewaySOSalertsPortablekitBuiltforcontinuousfieldmonitoring.TheConfinedSpaceSensorKitkeepspersonnelvisibleinsidetanks,shaftsandenclosedworkareas.ThreefixedBLEbeaconsbroadcastreferenceIDs;awearableT1000trackerreadsthemforzone-basedlocationanduplinksoverLoRaWANtoaUG63gatewayatthesurface,where4Gcarriesdatatothemonitoringplatformandatabletsiteview.AnSOSbutton,LEDandbuzzeronthetrackergiveworkersadirectalertchannel.Thewholekit—gateway,battery,beaconsandtrackers—packsintoaprotectivecaseforportabledeployment.Scopeispersonnellocation;gasandoxygensensingisoutsidethiskit.Validatedradiocoverage,beaconplacementandplatformintegrationareconfirmedonsite.Configurations,sensorcombinationsandintegrationscopeareconfirmedagainstyoursiterequirementsduringprojectscoping.Keyfeatures.ThreefixedBLEreferencepointssupportzone-basedpersonnellocation.Card-sizeT1000wearabletrackerwithSOSbutton,LEDandbuzzer,IP65.LoRaWANuplinksreachthesurfacegateway;4Gcarriesdatatotheplatform.Externalantennawith5mcablekeepsthegatewayconnectedfromthesurface.TabletsiteviewshowspersonnellocationandSOSeventsthroughtheintegratedplatform.Open4S-ready:connectlocationdatatoTRACIoryourpreferredplatform.Completesystemconfiguration.Oneconnectedkit—eachcomponentwithitskeyspecifications.Finalcomponentmodelsandappearancearesubjecttoconfirmation.01T1000wearabletrackerCard-sizepersonneltracker;quantitymatchedtocrewsizePositioningGNSS/Wi-Fiscanning/BLEscanningDatalinkLoRaWANv1.0.4ClassADimensions85×55×6.5mmPower700mAhrechargeablelithiumbatteryUserinterfaceSOSbutton,LEDandbuzzerProtectionIP65IndoorlocationisresolvedbytheapplicationusingbeaconIDsandRSSI.02BC02locationbeacons×3FixedBLElocationreferencesBluetoothBluetoothLE5.0/iBeaconDimensions115×100×29mmBattery4,000mAhreplaceableLi/SOCl₂ProtectionIP68ingress/IK08impactresistanceRoleinthekitBroadcastfixedreferenceIDstothetrackerBeaconpositionsandzonemappingareverifiedduringsitecommissioning.03UG63gateway+antenna4GLoRaWANgatewaywithexternalantennaLoRaWANgateway8channelsBackhaul4GLTE/EthernetAntennaextensionExternalantennawitha5mcableSitedisplayTabletviatheconnectedmonitoringplatformUG63isIP30;keepitinprotectedhousing.SIM/dataservicerequired.04BatterysupplyPortablegatewaypowerRoleinthekitPortablepowerforthegatewayandsurfaceequipmentCapacity/runtimeToconfirmagainstshiftpattern05ProtectivecasingHousingforcentralequipmentRoleinthekitCarriesgateway,batteryandaccessoriesasoneportablekitFinalenclosureToconfirm06TabletSitemonitoringinterfaceRoleinthekitPersonnellocationandSOSeventsviatheplatformModel/platformToconfirmWhereitworks.Typicaldeploymentcontextsforthisproductfamily.ConfinedspaceentryTanksandvesselsTunnelsandshaftsMaintenanceshutdownsManholeworksLone-workzonesConnectthewiderpicture.WorkerTrackingConnectworker-relatedfieldeventswithsiteoperations.ExploresolutionLet’sscopeyourConfinedSpaceSensorKitrequirements.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "header": "TRACIOpen4SSolutionsDevicesProductsInsightsAboutLet’stalk",
+    "footer": "Embeddedintelligenceforthebuiltworld.ExploreTRACIOpen4SSolutionsDevicesConnectProductsInsightsAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "Confined Space Sensor Kit | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "ConfinedSpaceSensorKit"
+      ],
+      [
+        "H2",
+        "Builtforcontinuousfieldmonitoring."
+      ],
+      [
+        "H2",
+        "Keyfeatures."
+      ],
+      [
+        "H2",
+        "Completesystemconfiguration."
+      ],
+      [
+        "H3",
+        "T1000wearabletracker"
+      ],
+      [
+        "H3",
+        "BC02locationbeacons×3"
+      ],
+      [
+        "H3",
+        "UG63gateway+antenna"
+      ],
+      [
+        "H3",
+        "Batterysupply"
+      ],
+      [
+        "H3",
+        "Protectivecasing"
+      ],
+      [
+        "H3",
+        "Tablet"
+      ],
+      [
+        "H2",
+        "Whereitworks."
+      ],
+      [
+        "H2",
+        "Connectthewiderpicture."
+      ],
+      [
+        "H3",
+        "WorkerTracking"
+      ],
+      [
+        "H2",
+        "Let’sscopeyourConfinedSpaceSensorKitrequirements."
+      ]
+    ],
+    "links": [
+      [
+        "/products",
+        "Products"
+      ],
+      [
+        "/contact?service=Confined%20Space%20Sensor%20Kit",
+        "Let’stalk"
+      ],
+      [
+        "/downloads/TRACI-ConfinedSpace-Kit-datasheet.pdf",
+        "Downloaddatasheet"
+      ],
+      [
+        "/downloads/TRACI-ConfinedSpace-Kit-datasheet.pdf",
+        ""
+      ],
+      [
+        "/solutions/worker-tracking",
         "Exploresolution"
       ],
       [

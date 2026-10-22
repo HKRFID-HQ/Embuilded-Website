@@ -163,6 +163,177 @@ export const products: Product[] = [
     dataSheets: [
       { label: "Download data sheet", href: "/downloads/TRACI-HookCam-datasheet.pdf" }
     ]
+  },
+  {
+    slug: "outrigger-monitoring-kit",
+    model: "TRACI Outrigger Kit",
+    title: "Outrigger Monitoring Kit",
+    category: "Plant monitoring",
+    summary: "Four points. One connected kit — track each extending outrigger with magnetic-mount ToF sensing, 4G connectivity and local siren and strobe alerts.",
+    description: "The Outrigger Monitoring Kit watches all four outriggers at once. Each extending section carries a magnetic target board while a ToF laser distance sensor fixed inboard measures the horizontal relative distance, so crews see extension status per point without manual checks. Readings travel over LoRaWAN to a 4G gateway inside the kit's waterproof case, and a siren and strobe give immediate audible and visual alerts on site. Magnetic mounting keeps deployment fast with no permanent modification to the machine. Final mounting positions, alarm thresholds and integration scope are confirmed against each machine during scoping.",
+    features: [
+      "Four matched sensor–target pairs track each extending outrigger, with a 2–350 cm detection range.",
+      "EM400-TLD ToF laser distance sensing with ±2 cm accuracy from −20 °C to +70 °C.",
+      "Magnetic mounting for sensors and target boards — no permanent modification to the machine.",
+      "8-channel LoRaWAN gateway with 4G LTE / Ethernet backhaul links the kit to monitoring workflows.",
+      "Local siren and strobe provide audible and visual alerts at the machine.",
+      "Waterproof case protects the central equipment; kit deploys as one portable unit."
+    ],
+    tags: ["ToF distance sensing", "Magnetic mounting", "LoRaWAN + 4G", "Siren & strobe alerts", "Waterproof case"],
+    components: [
+      {
+        name: "EM400-TLD ToF sensor ×4",
+        detail: "One sensor per outrigger, fixed inboard",
+        image: "/images/products/outrigger-sensor.jpg",
+        note: "Sensor fixed inboard; the target moves with the extending section. Horizontal relative distance; final mounting and orientation to confirm.",
+        specs: [
+          ["Technology", "Time-of-flight (ToF) laser distance sensing"],
+          ["Detection range", "2–350 cm; 4 matched pairs"],
+          ["Detection accuracy", "±2 cm (−20 °C to +70 °C)"],
+          ["Resolution / field of view", "1 mm / 27°"],
+          ["Sensor protection", "IP67 rated sensor enclosure"],
+          ["Link / configuration", "LoRaWAN / NFC via Milesight ToolBox"]
+        ]
+      },
+      {
+        name: "Target boards ×4",
+        detail: "One matching target per sensor",
+        image: "/images/products/outrigger-target.jpg",
+        specs: [
+          ["Target alignment", "Upright board facing the inboard sensor"],
+          ["Mounting", "Magnetic mounts, matched to each sensor"]
+        ]
+      },
+      {
+        name: "UG63 · 4G gateway ×1",
+        detail: "LoRaWAN gateway with cellular backhaul",
+        image: "/images/products/outrigger-gateway.jpg",
+        specs: [
+          ["Sensor network", "8-channel LoRaWAN gateway"],
+          ["Backhaul", "4G LTE / Ethernet"],
+          ["Housing", "Installed in the kit's waterproof case"],
+          ["Gateway protection", "IP30 — protected installation required"]
+        ]
+      },
+      {
+        name: "Siren & strobe",
+        detail: "Audible and visual local alerting",
+        image: "/images/products/outrigger-siren.jpg",
+        note: "Power, cellular service and the local alarm interface are matched during integration.",
+        specs: [
+          ["Alert output", "Siren / strobe via a matched control interface"]
+        ]
+      },
+      {
+        name: "Waterproof case",
+        detail: "Protective housing for the central equipment",
+        image: "/images/products/outrigger-case.jpg",
+        specs: [
+          ["Role in the kit", "Protects gateway, power and alarm interface in one portable enclosure"]
+        ]
+      }
+    ],
+    applications: [
+      "Mobile crane setup", "Outrigger position checks", "Aerial work platforms", "Heavy plant stabilisation", "Lifting operations", "Depot and yard handling"
+    ],
+    image: "/images/products/outrigger-crane.jpg",
+    heroImage: "/images/products/outrigger-crane.jpg",
+    solution: "outrigger-monitoring",
+    dataSheets: [
+      { label: "Download data sheet", href: "/downloads/TRACI-Outrigger-Kit-datasheet.pdf" }
+    ]
+  },
+  {
+    slug: "confined-space-sensor-kit",
+    model: "TRACI Confined Space Kit",
+    title: "Confined Space Sensor Kit",
+    category: "Personnel safety",
+    summary: "Know who is inside — BLE location beacons and a wearable LoRaWAN tracker connect personnel to a 4G-enabled gateway and tablet. Portable equipment, one connected kit.",
+    description: "The Confined Space Sensor Kit keeps personnel visible inside tanks, shafts and enclosed work areas. Three fixed BLE beacons broadcast reference IDs; a wearable T1000 tracker reads them for zone-based location and uplinks over LoRaWAN to a UG63 gateway at the surface, where 4G carries data to the monitoring platform and a tablet site view. An SOS button, LED and buzzer on the tracker give workers a direct alert channel. The whole kit — gateway, battery, beacons and trackers — packs into a protective case for portable deployment. Scope is personnel location; gas and oxygen sensing is outside this kit. Validated radio coverage, beacon placement and platform integration are confirmed on site.",
+    features: [
+      "Three fixed BLE reference points support zone-based personnel location.",
+      "Card-size T1000 wearable tracker with SOS button, LED and buzzer, IP65.",
+      "LoRaWAN uplinks reach the surface gateway; 4G carries data to the platform.",
+      "External antenna with 5 m cable keeps the gateway connected from the surface.",
+      "Tablet site view shows personnel location and SOS events through the integrated platform.",
+      "Open4S-ready: connect location data to TRACI or your preferred platform."
+    ],
+    tags: ["Wearable LoRaWAN tracker", "BLE location beacons", "4G gateway", "SOS alerts", "Portable kit"],
+    components: [
+      {
+        name: "T1000 wearable tracker",
+        detail: "Card-size personnel tracker; quantity matched to crew size",
+        image: "/images/products/confined-tracker.jpg",
+        note: "Indoor location is resolved by the application using beacon IDs and RSSI.",
+        specs: [
+          ["Positioning", "GNSS / Wi-Fi scanning / BLE scanning"],
+          ["Data link", "LoRaWAN v1.0.4 Class A"],
+          ["Dimensions", "85 × 55 × 6.5 mm"],
+          ["Power", "700 mAh rechargeable lithium battery"],
+          ["User interface", "SOS button, LED and buzzer"],
+          ["Protection", "IP65"]
+        ]
+      },
+      {
+        name: "BC02 location beacons ×3",
+        detail: "Fixed BLE location references",
+        image: "/images/products/confined-beacon.jpg",
+        note: "Beacon positions and zone mapping are verified during site commissioning.",
+        specs: [
+          ["Bluetooth", "Bluetooth LE 5.0 / iBeacon"],
+          ["Dimensions", "115 × 100 × 29 mm"],
+          ["Battery", "4,000 mAh replaceable Li/SOCl₂"],
+          ["Protection", "IP68 ingress / IK08 impact resistance"],
+          ["Role in the kit", "Broadcast fixed reference IDs to the tracker"]
+        ]
+      },
+      {
+        name: "UG63 gateway + antenna",
+        detail: "4G LoRaWAN gateway with external antenna",
+        image: "/images/products/confined-gateway.jpg",
+        note: "UG63 is IP30; keep it in protected housing. SIM / data service required.",
+        specs: [
+          ["LoRaWAN gateway", "8 channels"],
+          ["Backhaul", "4G LTE / Ethernet"],
+          ["Antenna extension", "External antenna with a 5 m cable"],
+          ["Site display", "Tablet via the connected monitoring platform"]
+        ]
+      },
+      {
+        name: "Battery supply",
+        detail: "Portable gateway power",
+        specs: [
+          ["Role in the kit", "Portable power for the gateway and surface equipment"],
+          ["Capacity / runtime", "To confirm against shift pattern"]
+        ]
+      },
+      {
+        name: "Protective casing",
+        detail: "Housing for central equipment",
+        image: "/images/products/confined-case.jpg",
+        specs: [
+          ["Role in the kit", "Carries gateway, battery and accessories as one portable kit"],
+          ["Final enclosure", "To confirm"]
+        ]
+      },
+      {
+        name: "Tablet",
+        detail: "Site monitoring interface",
+        specs: [
+          ["Role in the kit", "Personnel location and SOS events via the platform"],
+          ["Model / platform", "To confirm"]
+        ]
+      }
+    ],
+    applications: [
+      "Confined space entry", "Tanks and vessels", "Tunnels and shafts", "Maintenance shutdowns", "Manhole works", "Lone-work zones"
+    ],
+    image: "/images/products/confined-hero.jpg",
+    heroImage: "/images/products/confined-hero.jpg",
+    solution: "worker-tracking",
+    dataSheets: [
+      { label: "Download data sheet", href: "/downloads/TRACI-ConfinedSpace-Kit-datasheet.pdf" }
+    ]
   }
 ];
 
